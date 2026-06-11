@@ -15,26 +15,26 @@ export function SiteFooter({ locale }: SiteFooterProps) {
 
   return (
     <footer className="mt-auto bg-[#122820] text-white">
-      <div className="container-page grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-3 lg:py-16">
+      <div className="container-page grid grid-cols-1 gap-6 py-8 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8 lg:py-10">
         <div>
-          <BrandLogo locale={locale} showText={false} />
-          <p className="mt-4 font-serif text-lg font-bold">Reset Your Breath</p>
-          <p className="text-sm font-semibold text-[#5bb89a]">ابدأ من جديد</p>
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
+          <BrandLogo locale={locale} showText={false} size="sm" />
+          <p className="mt-2.5 font-serif text-base font-bold">Reset Your Breath</p>
+          <p className="text-xs font-semibold text-[#5bb89a]">ابدأ من جديد</p>
+          <p className="mt-2.5 max-w-xs text-xs leading-relaxed text-white/60">
             {ht(footerContent.tagline, locale)}
           </p>
         </div>
 
         <div>
-          <h3 className="font-serif text-lg font-bold">
+          <h3 className="font-serif text-base font-bold">
             {ht(footerContent.explore, locale)}
           </h3>
-          <ul className="mt-4 space-y-2.5">
+          <ul className="mt-2.5 space-y-1.5">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-sm text-white/60 transition hover:text-[#5bb89a]"
+                  className="text-xs text-white/60 transition hover:text-[#5bb89a]"
                 >
                   {ht(link.label, locale)}
                 </Link>
@@ -44,18 +44,18 @@ export function SiteFooter({ locale }: SiteFooterProps) {
         </div>
 
         <div>
-          <h3 className="font-serif text-lg font-bold">
+          <h3 className="font-serif text-base font-bold">
             {ht(footerContent.reminders, locale)}
           </h3>
-          <ul className="mt-4 space-y-3">
+          <ul className="mt-2.5 space-y-2">
             {footerContent.reminderItems.map((item, i) => {
               const Icon = reminderIcons[i];
               return (
                 <li
                   key={item.en}
-                  className="flex items-center gap-2.5 text-sm text-white/60"
+                  className="flex items-center gap-2 text-xs text-white/60"
                 >
-                  <Icon className="h-4 w-4 shrink-0 text-[#5bb89a]" />
+                  <Icon className="h-3.5 w-3.5 shrink-0 text-[#5bb89a]" />
                   {ht(item, locale)}
                 </li>
               );
@@ -65,7 +65,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-page py-5 text-center text-xs text-white/40">
+        <div className="container-page py-3 text-center text-[0.7rem] leading-relaxed text-white/40">
           © Reset Your Breath — ابدأ من جديد — {ht(footerContent.copyright, locale)}
         </div>
       </div>

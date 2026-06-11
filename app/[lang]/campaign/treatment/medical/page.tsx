@@ -44,9 +44,9 @@ export default async function MedicalPage({ params }: MedicalPageProps) {
         </div>
 
         <div className="p-6 sm:p-8">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-start gap-3 sm:items-center sm:gap-4">
             <IconBox icon={Pill} variant="blue" size="lg" />
-            <h2 className="text-2xl font-extrabold text-teal-950">
+            <h2 className="text-xl font-extrabold text-teal-950 sm:text-2xl">
               {tt(medical.champix.title, lang)}
             </h2>
           </div>

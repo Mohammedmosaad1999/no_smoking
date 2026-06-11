@@ -213,10 +213,10 @@ function ScoringTable({
         <table className="w-full text-start">
           <thead>
             <tr className="border-b border-slate-100 bg-white">
-              <th className="px-6 py-4 text-base font-extrabold text-slate-700">
+              <th className="px-4 py-3 text-sm font-extrabold text-slate-700 sm:px-6 sm:py-4 sm:text-base">
                 {locale === "en" ? "Total Score" : "المجموع"}
               </th>
-              <th className="px-6 py-4 text-base font-extrabold text-slate-700">
+              <th className="px-4 py-3 text-sm font-extrabold text-slate-700 sm:px-6 sm:py-4 sm:text-base">
                 {locale === "en" ? "Addiction Severity" : "شدة الإدمان"}
               </th>
             </tr>
@@ -235,10 +235,10 @@ function ScoringTable({
                     isActive ? "bg-teal-50 font-bold" : ""
                   }`}
                 >
-                  <td className="px-6 py-4 text-base text-slate-700">
+                  <td className="px-4 py-3 text-sm text-slate-700 sm:px-6 sm:py-4 sm:text-base">
                     {row.range}
                   </td>
-                  <td className="px-6 py-4 text-base text-slate-800">
+                  <td className="px-4 py-3 text-sm text-slate-800 sm:px-6 sm:py-4 sm:text-base">
                     {at(row.label, locale)}
                   </td>
                 </tr>

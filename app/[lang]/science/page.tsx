@@ -26,20 +26,20 @@ export default async function SciencePage({ params }: SciencePageProps) {
   return (
     <div className="section-mesh">
       <section className="page-header">
-        <div className="container-page py-14 sm:py-20">
-          <div className="badge-pill mb-5">
+        <div className="container-page py-8 sm:py-12 lg:py-16">
+          <div className="badge-pill mb-3 sm:mb-5">
             {lang === "en" ? "Page 2" : "الصفحة 2"}
           </div>
           <h1 className="max-w-3xl font-extrabold text-teal-950">
             {t(content.science.title, lang)}
           </h1>
-          <p className="mt-5 max-w-2xl text-xl leading-relaxed text-slate-600">
+          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-slate-600 sm:mt-5 sm:text-xl">
             {t(content.science.subtitle, lang)}
           </p>
         </div>
       </section>
 
-      <section className="container-page space-y-8 pb-20 pt-10">
+      <section className="container-page space-y-6 pb-12 pt-6 sm:space-y-8 sm:pb-16 sm:pt-8 lg:pb-20">
         {content.science.topics.map((topic, index) => {
           const meta = topicMeta[index];
           const Icon = meta.icon;
@@ -59,7 +59,7 @@ export default async function SciencePage({ params }: SciencePageProps) {
                 </div>
 
                 <div className="lg:col-span-3">
-                  <div className="flex items-start gap-4 border-b border-teal-50 bg-teal-50/30 px-6 py-5 sm:px-8">
+                  <div className="flex flex-col gap-3 border-b border-teal-50 bg-teal-50/30 px-5 py-4 sm:flex-row sm:items-start sm:gap-4 sm:px-8 sm:py-5">
                     <IconBox icon={Icon} variant={meta.variant} size="lg" />
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-teal-600">

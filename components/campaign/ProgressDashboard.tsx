@@ -66,9 +66,9 @@ export function ProgressDashboard({ locale }: ProgressDashboardProps) {
 
   if (!profile) {
     return (
-      <div className="card-premium mx-auto max-w-xl p-10 text-center">
+      <div className="card-premium mx-auto max-w-xl p-6 text-center sm:p-10">
         <p className="text-slate-700">{pt(progressContent.noProfile, locale)}</p>
-        <Link href={`/${locale}/campaign/signup`} className="btn-primary mt-6">
+        <Link href={`/${locale}/campaign/signup`} className="btn-primary mt-6 w-full sm:w-auto">
           {pt(progressContent.signupLink, locale)}
         </Link>
       </div>
@@ -102,57 +102,57 @@ export function ProgressDashboard({ locale }: ProgressDashboardProps) {
   ];
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8 sm:space-y-10">
       {assessmentScore !== null && (
-        <div className="card-premium flex flex-wrap items-center justify-between gap-4 p-6">
+        <div className="card-premium flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
           <div>
-            <p className="font-bold text-slate-500">
+            <p className="text-sm font-bold text-slate-500">
               {locale === "en" ? "Your addiction assessment" : "تقييم إدمانك"}
             </p>
-            <p className="mt-1 text-2xl font-extrabold text-teal-950">
+            <p className="mt-1 text-xl font-extrabold text-teal-950 sm:text-2xl">
               {at(getSeverityFromScore(assessmentScore).label, locale)}
-              <span className="ms-2 text-lg font-bold text-slate-400">
+              <span className="ms-2 text-base font-bold text-slate-400 sm:text-lg">
                 ({assessmentScore}/17)
               </span>
             </p>
           </div>
           <Link
             href={`/${locale}/campaign/assessment`}
-            className="btn-secondary text-base"
+            className="btn-secondary w-full text-base sm:w-auto"
           >
             {locale === "en" ? "View details" : "عرض التفاصيل"}
           </Link>
         </div>
       )}
 
-      <div className="grid gap-5 sm:grid-cols-3">
-        <div className="card-premium p-6 text-center">
+      <div className="grid gap-4 sm:grid-cols-3 sm:gap-5">
+        <div className="card-premium p-5 text-center sm:p-6">
           <TrendingUp className="mx-auto mb-3 h-6 w-6 text-teal-600" />
           <p className="text-sm font-semibold text-slate-500">
             {pt(progressContent.streak, locale)}
           </p>
-          <p className="mt-2 text-5xl font-extrabold text-teal-700">{days}</p>
+          <p className="mt-2 text-4xl font-extrabold text-teal-700 sm:text-5xl">{days}</p>
         </div>
 
-        <div className="card-premium p-6 text-center">
+        <div className="card-premium p-5 text-center sm:p-6">
           <Award className="mx-auto mb-3 h-6 w-6" style={{ color: currentBadge.color }} />
           <p className="text-sm font-semibold text-slate-500">
             {pt(progressContent.currentBadge, locale)}
           </p>
           <p
-            className="mt-2 text-2xl font-extrabold"
+            className="mt-2 text-xl font-extrabold sm:text-2xl"
             style={{ color: currentBadge.color }}
           >
             {pt(currentBadge.badge, locale)}
           </p>
         </div>
 
-        <div className="card-premium p-6 text-center">
+        <div className="card-premium p-5 text-center sm:p-6">
           <Wallet className="mx-auto mb-3 h-6 w-6 text-emerald-600" />
           <p className="text-sm font-semibold text-slate-500">
             {pt(progressContent.moneySaved, locale)}
           </p>
-          <p className="mt-2 text-3xl font-extrabold text-emerald-700">
+          <p className="mt-2 text-2xl font-extrabold text-emerald-700 sm:text-3xl">
             {saved.toLocaleString(undefined, { maximumFractionDigits: 0 })}{" "}
             {locale === "ar" ? "ج.م" : "EGP"}
           </p>
@@ -214,12 +214,61 @@ export function ProgressDashboard({ locale }: ProgressDashboardProps) {
       </div>
 
       <div>
-        <h2 className="mb-6 text-2xl font-extrabold text-teal-950">
+        <h2 className="mb-4 text-xl font-extrabold text-teal-950 sm:mb-6 sm:text-2xl">
           {pt(progressContent.healthTitle, locale)}
         </h2>
-        <div className="card-premium overflow-hidden">
+
+        <div className="space-y-3 lg:hidden">
+          {healthImprovements.flatMap((group) =>
+            group.improvements.map((item, idx) => {
+              const evalId = `${group.id}-${idx}`;
+              const evalValue = evaluations[evalId];
+              return (
+                <div key={evalId} className="card-premium p-4 sm:p-5">
+                  {idx === 0 && (
+                    <p className="text-xs font-bold uppercase tracking-wide text-teal-600">
+                      {pt(group.timeframe, locale)}
+                    </p>
+                  )}
+                  <p className="mt-1 text-sm text-slate-800 sm:text-base">
+                    {pt(item, locale)}
+                  </p>
+                  <p className="mt-3 text-xs font-semibold text-slate-500">
+                    {pt(progressContent.feelingQuestion, locale)}
+                  </p>
+                  <div className="mt-2 flex gap-2">
+                    <button
+                      type="button"
+                      onClick={() => handleEvaluation(evalId, "yes")}
+                      className={`flex-1 rounded-lg px-3 py-2 text-xs font-bold transition sm:flex-none sm:px-3.5 sm:py-1.5 ${
+                        evalValue === "yes"
+                          ? "bg-emerald-600 text-white"
+                          : "bg-slate-100 text-slate-600 hover:bg-emerald-50"
+                      }`}
+                    >
+                      {pt(progressContent.yes, locale)}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleEvaluation(evalId, "no")}
+                      className={`flex-1 rounded-lg px-3 py-2 text-xs font-bold transition sm:flex-none sm:px-3.5 sm:py-1.5 ${
+                        evalValue === "no"
+                          ? "bg-red-600 text-white"
+                          : "bg-slate-100 text-slate-600 hover:bg-red-50"
+                      }`}
+                    >
+                      {pt(progressContent.no, locale)}
+                    </button>
+                  </div>
+                </div>
+              );
+            }),
+          )}
+        </div>
+
+        <div className="card-premium hidden overflow-hidden lg:block">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[640px] text-start">
+            <table className="w-full text-start">
               <thead>
                 <tr className="border-b border-slate-100 bg-slate-50/80">
                   <th className="px-5 py-4 text-sm font-bold text-slate-700">
@@ -277,7 +326,7 @@ export function ProgressDashboard({ locale }: ProgressDashboardProps) {
                         </td>
                       </tr>
                     );
-                  })
+                  }),
                 )}
               </tbody>
             </table>

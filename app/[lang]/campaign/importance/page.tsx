@@ -39,7 +39,7 @@ export default async function ImportancePage({ params }: ImportancePageProps) {
         </blockquote>
       </div>
 
-      <div className="mt-10 flex flex-wrap gap-4">
+      <div className="mt-8 action-row sm:mt-10">
         <Link href={`/${lang}/campaign/calculator`} className="btn-primary">
           {ct(campaignContent.importance.nextCalculator, lang)}
           <ArrowRight

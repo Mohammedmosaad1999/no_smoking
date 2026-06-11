@@ -192,7 +192,7 @@ export function DamageCalculator({ locale }: DamageCalculatorProps) {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="action-row">
         <Link href={`/${locale}/campaign/treatment`} className="btn-primary">
           {ct(campaignContent.calculator.nextTreatment, locale)}
           <ArrowRight

@@ -11,7 +11,7 @@ export default async function SignupPage({ params }: SignupPageProps) {
   if (!isValidLocale(lang)) notFound();
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-14 sm:px-8 sm:py-20">
+    <section className="container-page py-8 sm:py-12 lg:py-16">
       <PersonalDataForm locale={lang} />
     </section>
   );

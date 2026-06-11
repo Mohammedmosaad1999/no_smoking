@@ -77,9 +77,9 @@ export function PersonalDataForm({ locale }: PersonalDataFormProps) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="card-premium mx-auto max-w-3xl overflow-hidden"
+      className="card-premium mx-auto w-full max-w-3xl overflow-hidden"
     >
-      <div className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-800 to-emerald-900 px-6 py-8 text-white sm:px-10 sm:py-10">
+      <div className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-800 to-emerald-900 px-5 py-6 text-white sm:px-10 sm:py-10">
         <div className="absolute -end-10 -top-10 h-40 w-40 rounded-full bg-white/5" />
         <div className="absolute -bottom-8 -start-8 h-32 w-32 rounded-full bg-emerald-400/10" />
 
@@ -92,7 +92,7 @@ export function PersonalDataForm({ locale }: PersonalDataFormProps) {
           <p className="text-sm font-bold uppercase tracking-wider text-teal-200">
             {locale === "en" ? "Step 1 of 3" : "الخطوة 1 من 3"}
           </p>
-          <h2 className="mt-2 text-2xl font-extrabold sm:text-3xl">
+          <h2 className="mt-2 text-xl font-extrabold sm:text-2xl lg:text-3xl">
             {ct(campaignContent.signup.title, locale)}
           </h2>
           <p className="mt-3 max-w-xl text-lg leading-relaxed text-teal-100/90">
@@ -101,7 +101,7 @@ export function PersonalDataForm({ locale }: PersonalDataFormProps) {
         </div>
       </div>
 
-      <div className="space-y-8 p-6 sm:p-10">
+      <div className="space-y-6 p-5 sm:space-y-8 sm:p-10">
         <fieldset className="form-section">
           <legend className="form-section-title">
             {ct(campaignContent.signup.sections.personal, locale)}

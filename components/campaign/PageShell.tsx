@@ -17,18 +17,18 @@ export function PageShell({
   return (
     <div className="section-mesh">
       <section className="page-header">
-        <div className="container-page py-12 sm:py-16">
-          {badge && <div className="badge-pill mb-4">{badge}</div>}
+        <div className="container-page py-8 sm:py-12 lg:py-16">
+          {badge && <div className="badge-pill mb-3 sm:mb-4">{badge}</div>}
           <h1 className="max-w-3xl font-extrabold text-teal-950">{title}</h1>
           {subtitle && (
-            <p className="mt-4 max-w-2xl text-xl leading-relaxed text-slate-600">
+            <p className="mt-3 max-w-2xl text-lg leading-relaxed text-slate-600 sm:mt-4 sm:text-xl">
               {subtitle}
             </p>
           )}
         </div>
       </section>
 
-      <section className="container-page py-10 sm:py-14">{children}</section>
+      <section className="container-page py-8 sm:py-10 lg:py-14">{children}</section>
     </div>
   );
 }

@@ -23,7 +23,7 @@ export function ScienceCTA({ locale }: ScienceCTAProps) {
         <div className="absolute inset-0 bg-gradient-to-r from-teal-950/95 via-emerald-900/90 to-teal-800/85" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-5 py-20 text-center sm:px-8 sm:py-24">
+      <div className="relative container-page py-12 text-center sm:py-16 lg:py-20">
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/20">
           <Heart className="h-7 w-7 text-white" />
         </div>
@@ -32,7 +32,7 @@ export function ScienceCTA({ locale }: ScienceCTAProps) {
             ? "Ready to take the next step?"
             : "هل أنت مستعد لاتخاذ الخطوة التالية؟"}
         </p>
-        <h2 className="mt-3 text-3xl font-extrabold text-white sm:text-4xl">
+        <h2 className="mt-3 text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl">
           {locale === "en" ? "Reset Your Breath Campaign" : "حملة ابدأ من جديد"}
         </h2>
         <Link

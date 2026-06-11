@@ -21,7 +21,10 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <HeaderCta locale={locale} />
-          <div className="hidden sm:block">
+          <div className="hidden sm:block lg:hidden">
+            <LanguageToggle locale={locale} />
+          </div>
+          <div className="hidden lg:block">
             <LanguageToggle locale={locale} />
           </div>
           <MobileNav locale={locale} />
