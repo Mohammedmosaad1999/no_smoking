@@ -26,20 +26,20 @@ export default async function SciencePage({ params }: SciencePageProps) {
   return (
     <div className="section-mesh">
       <section className="page-header">
-        <div className="container-page py-8 sm:py-12 lg:py-16">
-          <div className="badge-pill mb-3 sm:mb-5">
+        <div className="container-page py-5 sm:py-8 lg:py-10">
+          {/* <div className="badge-pill mb-3 sm:mb-5">
             {lang === "en" ? "Page 2" : "الصفحة 2"}
-          </div>
+          </div> */}
           <h1 className="max-w-3xl font-extrabold text-teal-950">
             {t(content.science.title, lang)}
           </h1>
-          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-slate-600 sm:mt-5 sm:text-xl">
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 sm:mt-3 sm:text-base">
             {t(content.science.subtitle, lang)}
           </p>
         </div>
       </section>
 
-      <section className="container-page space-y-6 pb-12 pt-6 sm:space-y-8 sm:pb-16 sm:pt-8 lg:pb-20">
+      <section className="container-page space-y-5 pb-10 pt-4 sm:space-y-6 sm:pb-12 sm:pt-6 lg:pb-14">
         {content.science.topics.map((topic, index) => {
           const meta = topicMeta[index];
           const Icon = meta.icon;

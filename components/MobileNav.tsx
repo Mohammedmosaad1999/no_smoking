@@ -11,8 +11,10 @@ import {
   Globe,
   Home,
   Menu,
+  ShoppingBag,
   TrendingUp,
-  Users,
+  // Users,
+  Video,
   X,
   type LucideIcon,
 } from "lucide-react";
@@ -32,18 +34,19 @@ type NavItem = {
 const iconMap: Record<string, LucideIcon> = {
   home: Home,
   science: BookOpen,
+  community: Video,
+  products: ShoppingBag,
   cost: Calculator,
   treatment: Activity,
   track: TrendingUp,
-  support: Users,
+  // support: Users,
 };
 
 function buildNavItems(locale: Locale): NavItem[] {
-  const keys = ["home", "science", "cost", "treatment", "track", "support"];
-  return getNavLinks(locale).map((link, i) => ({
+  return getNavLinks(locale).map((link) => ({
     href: link.href,
     label: ht(link.label, locale),
-    icon: iconMap[keys[i]] ?? Home,
+    icon: iconMap[link.key] ?? Home,
   }));
 }
 

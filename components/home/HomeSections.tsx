@@ -10,14 +10,14 @@ export function HomeHero({ locale }: HomeHeroProps) {
   const highlight = ht(homeContent.headlineHighlight, locale);
 
   return (
-    <section className="container-page py-8 sm:py-12 lg:py-20">
-      <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+    <section className="container-page py-5 sm:py-8 lg:py-12">
+      <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#5bb89a] sm:text-sm">
             {ht(homeContent.overline, locale)}
           </p>
 
-          <h1 className="mt-3 font-serif text-3xl leading-tight text-[#1a4338] sm:mt-4 sm:text-4xl lg:text-[3.25rem]">
+          <h1 className="mt-2 font-serif text-2xl leading-tight text-[#1a4338] sm:mt-3 sm:text-3xl lg:text-4xl">
             {locale === "en" ? (
               <>
                 Reset your{" "}
@@ -32,11 +32,11 @@ export function HomeHero({ locale }: HomeHeroProps) {
             )}
           </h1>
 
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-[#1a4338]/75 sm:mt-5 sm:text-lg">
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#1a4338]/75 sm:text-base">
             {ht(homeContent.description, locale)}
           </p>
 
-          <div className="action-row mt-6 sm:mt-8">
+          <div className="action-row mt-4 sm:mt-6">
             <Link href={`/${locale}/campaign/signup`} className="btn-coral">
               {ht(homeContent.cta, locale)}
             </Link>
@@ -45,7 +45,7 @@ export function HomeHero({ locale }: HomeHeroProps) {
             </Link>
           </div>
 
-          <div className="mt-8 grid grid-cols-3 gap-2 border-t border-[#e2ebe6] pt-6 sm:mt-10 sm:gap-4 sm:pt-8">
+          <div className="mt-6 grid grid-cols-3 gap-2 border-t border-[#e2ebe6] pt-5 sm:mt-7 sm:gap-3 sm:pt-6">
             {homeContent.stats.map((stat) => (
               <div key={stat.value.en}>
                 <p className="font-serif text-xl font-bold text-[#5bb89a] sm:text-2xl lg:text-3xl">
@@ -98,7 +98,7 @@ export function HomeHero({ locale }: HomeHeroProps) {
         </div>
       </div>
 
-      <p className="mt-10 text-xs font-bold uppercase tracking-[0.2em] text-[#5bb89a] sm:mt-16">
+      <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-[#5bb89a] sm:mt-10">
         {ht(homeContent.bottomSection, locale)}
       </p>
     </section>
@@ -111,17 +111,17 @@ type HomeCtaProps = {
 
 export function HomeCta({ locale }: HomeCtaProps) {
   return (
-    <section className="container-page pb-8 sm:pb-12 lg:pb-16">
-      <div className="cta-banner rounded-2xl px-5 py-8 text-center sm:rounded-[2rem] sm:px-10 sm:py-12 lg:px-12 lg:py-16">
-        <h2 className="font-serif text-2xl text-white sm:text-3xl lg:text-4xl">
+    <section className="container-page pb-5 sm:pb-8 lg:pb-10">
+      <div className="cta-banner rounded-2xl px-4 py-6 text-center sm:rounded-[2rem] sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+        <h2 className="font-serif text-xl text-white sm:text-2xl lg:text-3xl">
           {ht(homeContent.ctaSection.title, locale)}
         </h2>
-        <p className="mx-auto mt-3 max-w-lg text-base text-white/75 sm:mt-4 sm:text-lg">
+        <p className="mx-auto mt-2 max-w-lg text-sm text-white/75 sm:mt-3 sm:text-base">
           {ht(homeContent.ctaSection.subtitle, locale)}
         </p>
         <Link
           href={`/${locale}/campaign/signup`}
-          className="btn-coral mt-6 inline-flex sm:mt-8"
+          className="btn-coral mt-5 inline-flex sm:mt-6"
         >
           {ht(homeContent.cta, locale)}
         </Link>

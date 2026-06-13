@@ -102,7 +102,7 @@ export function ProgressDashboard({ locale }: ProgressDashboardProps) {
   ];
 
   return (
-    <div className="space-y-8 sm:space-y-10">
+    <div className="space-y-6 sm:space-y-7">
       {assessmentScore !== null && (
         <div className="card-premium flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
           <div>

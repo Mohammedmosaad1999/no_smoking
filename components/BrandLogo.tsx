@@ -5,18 +5,21 @@ type BrandLogoProps = {
   locale?: Locale;
   size?: "sm" | "md";
   showText?: boolean;
+  variant?: "default" | "header";
 };
 
 export function BrandLogo({
   locale,
   size = "md",
   showText = true,
+  variant = "default",
 }: BrandLogoProps) {
-  const iconSize = size === "sm" ? "h-9 w-9" : "h-11 w-11";
-  const svgSize = size === "sm" ? 22 : 26;
+  const iconSize = size === "sm" ? "h-8 w-8" : "h-10 w-10";
+  const svgSize = size === "sm" ? 20 : 24;
+  const isHeader = variant === "header";
 
   return (
-    <div className="flex min-w-0 items-center gap-3">
+    <div className="flex min-w-0 items-center gap-2 sm:gap-2.5">
       <span
         className={`${iconSize} flex shrink-0 items-center justify-center rounded-full bg-[#e8f3ef]`}
       >
@@ -41,10 +44,22 @@ export function BrandLogo({
       </span>
       {showText && locale && (
         <div className="min-w-0 leading-tight">
-          <p className="truncate font-serif text-sm font-bold text-[#1a4338] sm:text-base lg:text-lg">
+          <p
+            className={`whitespace-nowrap font-serif font-bold text-[#1a4338] ${
+              isHeader
+                ? "text-xs xl:text-sm"
+                : "text-sm sm:text-base lg:text-lg"
+            }`}
+          >
             Reset Your Breath
           </p>
-          <p className="truncate text-[0.7rem] font-semibold text-[#5bb89a] sm:text-xs">
+          <p
+            className={`whitespace-nowrap font-semibold text-[#5bb89a] ${
+              isHeader
+                ? "hidden text-[0.65rem] 2xl:block"
+                : "text-[0.7rem] sm:text-xs"
+            }`}
+          >
             {siteName.ar}
           </p>
         </div>

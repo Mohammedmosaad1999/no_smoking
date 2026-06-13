@@ -11,7 +11,7 @@ export default async function AssessmentPage({ params }: AssessmentPageProps) {
   if (!isValidLocale(lang)) notFound();
 
   return (
-    <section className="container-page py-8 sm:py-12 lg:py-14">
+    <section className="container-page py-5 sm:py-7 lg:py-9">
       <AddictionAssessment locale={lang} />
     </section>
   );

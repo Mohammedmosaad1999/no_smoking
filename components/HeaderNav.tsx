@@ -16,7 +16,7 @@ export function DesktopNav({ locale }: HeaderNavProps) {
   const navLinks = getNavLinks(locale);
 
   return (
-    <nav className="hidden items-center gap-1 lg:flex xl:gap-2">
+    <nav className="hidden min-w-0 flex-nowrap items-center justify-center gap-0.5 lg:flex xl:gap-1">
       {navLinks.map((item) => {
         const active = isNavLinkActive(pathname, item.href, locale);
         return (

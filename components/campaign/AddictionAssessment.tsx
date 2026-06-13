@@ -67,7 +67,7 @@ export function AddictionAssessment({ locale }: AddictionAssessmentProps) {
 
   if (showResult && allAnswered) {
     return (
-      <div className="mx-auto max-w-3xl space-y-8">
+      <div className="content-narrow space-y-6 sm:space-y-7">
         <div className="card-premium overflow-hidden">
           <div className="bg-gradient-to-br from-teal-700 to-emerald-800 px-6 py-8 text-white sm:px-10">
             <CheckCircle2 className="mb-3 h-10 w-10" />
@@ -127,7 +127,7 @@ export function AddictionAssessment({ locale }: AddictionAssessmentProps) {
   }
 
   return (
-    <div className="mx-auto max-w-3xl space-y-8">
+    <div className="content-narrow space-y-6 sm:space-y-7">
       <form onSubmit={handleSubmit} className="card-premium overflow-hidden">
         <div className="border-b border-teal-100 bg-teal-50/50 px-6 py-6 sm:px-10">
           <div className="flex items-center gap-3">

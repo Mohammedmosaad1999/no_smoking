@@ -77,7 +77,7 @@ export function PersonalDataForm({ locale }: PersonalDataFormProps) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="card-premium mx-auto w-full max-w-3xl overflow-hidden"
+      className="card-premium content-narrow overflow-hidden"
     >
       <div className="relative overflow-hidden bg-gradient-to-br from-teal-700 via-teal-800 to-emerald-900 px-5 py-6 text-white sm:px-10 sm:py-10">
         <div className="absolute -end-10 -top-10 h-40 w-40 rounded-full bg-white/5" />

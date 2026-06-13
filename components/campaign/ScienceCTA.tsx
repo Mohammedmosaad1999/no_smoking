@@ -23,7 +23,7 @@ export function ScienceCTA({ locale }: ScienceCTAProps) {
         <div className="absolute inset-0 bg-gradient-to-r from-teal-950/95 via-emerald-900/90 to-teal-800/85" />
       </div>
 
-      <div className="relative container-page py-12 text-center sm:py-16 lg:py-20">
+      <div className="relative container-page py-8 text-center sm:py-10 lg:py-12">
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/20">
           <Heart className="h-7 w-7 text-white" />
         </div>

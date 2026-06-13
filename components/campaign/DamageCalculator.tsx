@@ -69,7 +69,7 @@ export function DamageCalculator({ locale }: DamageCalculatorProps) {
   ];
 
   return (
-    <div className="mx-auto max-w-4xl space-y-10">
+    <div className="mx-auto w-full max-w-5xl space-y-6 xl:max-w-6xl sm:space-y-7">
       <div className="card-premium p-6 sm:p-8">
         <p className="text-base font-bold text-teal-700">
           {ct(campaignContent.calculator.priceNote, locale)}

@@ -4,11 +4,13 @@ type Bilingual = Record<Locale, string>;
 
 export const navLabels = {
   home: { en: "Home", ar: "الرئيسية" },
-  science: { en: "The Science", ar: "العلم" },
+  science: { en: "Science", ar: "العلم" },
+  community: { en: "Community", ar: "المجتمع" },
+  products: { en: "Products", ar: "المنتجات" },
   cost: { en: "Cost", ar: "التكلفة" },
   treatment: { en: "Treatment", ar: "العلاج" },
   track: { en: "Track", ar: "التتبع" },
-  support: { en: "Support", ar: "الدعم" },
+  // support: { en: "Support", ar: "الدعم" },
 } as const;
 
 export const homeContent = {
@@ -120,11 +122,17 @@ export function ht(record: Bilingual, locale: Locale): string {
 
 export function getNavLinks(locale: Locale) {
   return [
-    { href: `/${locale}`, label: navLabels.home },
-    { href: `/${locale}/science`, label: navLabels.science },
-    { href: `/${locale}/campaign/calculator`, label: navLabels.cost },
-    { href: `/${locale}/campaign/treatment`, label: navLabels.treatment },
-    { href: `/${locale}/campaign/progress`, label: navLabels.track },
-    { href: `/${locale}/campaign/treatment/psychological`, label: navLabels.support },
+    { href: `/${locale}`, label: navLabels.home, key: "home" },
+    { href: `/${locale}/science`, label: navLabels.science, key: "science" },
+    { href: `/${locale}/community`, label: navLabels.community, key: "community" },
+    { href: `/${locale}/products`, label: navLabels.products, key: "products" },
+    { href: `/${locale}/campaign/calculator`, label: navLabels.cost, key: "cost" },
+    { href: `/${locale}/campaign/treatment`, label: navLabels.treatment, key: "treatment" },
+    { href: `/${locale}/campaign/progress`, label: navLabels.track, key: "track" },
+    // {
+    //   href: `/${locale}/campaign/treatment/psychological`,
+    //   label: navLabels.support,
+    //   key: "support",
+    // },
   ] as const;
 }
