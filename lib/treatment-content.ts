@@ -298,8 +298,8 @@ export const treatmentContent = {
           ar: ar.treatmentContent.psychological.methods[0].description,
         },
         example: {
-          en: en.treatmentContent.psychological.methods[0].example,
-          ar: ar.treatmentContent.psychological.methods[0].example,
+          en: en.treatmentContent.psychological.methods[0].example!,
+          ar: ar.treatmentContent.psychological.methods[0].example!,
         },
       },
       {
@@ -309,8 +309,8 @@ export const treatmentContent = {
           ar: ar.treatmentContent.psychological.methods[1].description,
         },
         example: {
-          en: en.treatmentContent.psychological.methods[1].example,
-          ar: ar.treatmentContent.psychological.methods[1].example,
+          en: en.treatmentContent.psychological.methods[1].example!,
+          ar: ar.treatmentContent.psychological.methods[1].example!,
         },
       },
       {
@@ -364,10 +364,10 @@ export const treatmentContent = {
           ar: ar.treatmentContent.mohp.sections[0].body,
         },
         bullets: [
-          { en: en.treatmentContent.mohp.sections[0].bullets[0], ar: ar.treatmentContent.mohp.sections[0].bullets[0] },
-          { en: en.treatmentContent.mohp.sections[0].bullets[1], ar: ar.treatmentContent.mohp.sections[0].bullets[1] },
-          { en: en.treatmentContent.mohp.sections[0].bullets[2], ar: ar.treatmentContent.mohp.sections[0].bullets[2] },
-          { en: en.treatmentContent.mohp.sections[0].bullets[3], ar: ar.treatmentContent.mohp.sections[0].bullets[3] },
+          { en: en.treatmentContent.mohp.sections[0].bullets![0], ar: ar.treatmentContent.mohp.sections[0].bullets![0] },
+          { en: en.treatmentContent.mohp.sections[0].bullets![1], ar: ar.treatmentContent.mohp.sections[0].bullets![1] },
+          { en: en.treatmentContent.mohp.sections[0].bullets![2], ar: ar.treatmentContent.mohp.sections[0].bullets![2] },
+          { en: en.treatmentContent.mohp.sections[0].bullets![3], ar: ar.treatmentContent.mohp.sections[0].bullets![3] },
         ],
       },
       {

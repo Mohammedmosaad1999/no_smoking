@@ -5,9 +5,9 @@ import {
   productItems,
   productsContent,
   pt,
-  type ProductItem,
 } from "@/lib/products-content";
 import type { Locale } from "@/lib/i18n";
+import type { ProductItem } from "@/types";
 import { getVideosForLocale } from "@/lib/video-utils";
 
 type ProductCatalogProps = {
