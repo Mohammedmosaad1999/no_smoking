@@ -37,6 +37,14 @@ export const productItems: readonly ProductItem[] = [
           en: "How to use Champix",
           ar: "فيديو يوريك ازاي تستخدم الدواء",
         },
+        url: "https://www.youtube.com/watch?v=ljbnWtAsMNE", 
+      },
+      {
+        locale: "en",
+        label: {
+          en: "How to use Champix",
+          ar: "فيديو يوريك ازاي تستخدم الدواء",
+        },
         url: "https://youtu.be/osVTf4Un_3c",
       },
     ],
