@@ -19,7 +19,7 @@ import {
   pt,
 } from "@/lib/progress-content";
 import { at, getSeverityFromScore } from "@/lib/assessment-content";
-import type { Locale } from "@/lib/i18n";
+import type { Locale, UserProfile } from "@/types";
 import {
   getAssessmentResult,
   getDaysSinceQuit,
@@ -29,8 +29,7 @@ import {
   getUserProfile,
   saveHealthEvaluation,
   setNotificationsEnabled,
-  type UserProfile,
-} from "@/lib/user-storage";
+} from "@/services/user-storage";
 
 type ProgressDashboardProps = {
   locale: Locale;

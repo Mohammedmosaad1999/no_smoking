@@ -1,21 +1,4 @@
-export type AssessmentResult = {
-  score: number;
-  answers: Record<string, number>;
-};
-
-export type UserProfile = {
-  email: string;
-  name: string;
-  age: string;
-  gender: string;
-  smokingSince: string;
-  cigarettesPerDay: string;
-  whyStarted: string;
-  quitDate: string;
-  costPerCigarette: string;
-};
-
-export type HealthEvaluation = Record<string, "yes" | "no" | null>;
+import type { UserProfile, AssessmentResult, HealthEvaluation } from "@/types";
 
 const PROFILE_KEY = "ryb_user_profile";
 const ASSESSMENT_KEY = "ryb_assessment_result";

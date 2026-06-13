@@ -9,12 +9,12 @@ import {
   getCigaretteBandPoints,
   getSeverityFromScore,
 } from "@/lib/assessment-content";
-import type { Locale } from "@/lib/i18n";
+import type { Locale } from "@/types";
 import {
   getAssessmentResult,
   getUserProfile,
   saveAssessmentResult,
-} from "@/lib/user-storage";
+} from "@/services/user-storage";
 
 type AddictionAssessmentProps = {
   locale: Locale;

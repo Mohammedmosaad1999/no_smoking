@@ -11,8 +11,8 @@ import {
   formatNumber,
 } from "@/lib/calculator";
 import { campaignContent, ct } from "@/lib/campaign-content";
-import type { Locale } from "@/lib/i18n";
-import { getUserProfile, saveUserProfile } from "@/lib/user-storage";
+import type { Locale } from "@/types";
+import { getUserProfile, saveUserProfile } from "@/services/user-storage";
 
 type DamageCalculatorProps = {
   locale: Locale;

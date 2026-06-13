@@ -1,0 +1,663 @@
+{
+  "content": {
+    "siteName": "Reset Your Breathe",
+    "languageSelect": {
+      "title": "Choose Your Language",
+      "subtitle": "Select how you'd like to explore Reset Your Breathe",
+      "english": "English",
+      "arabic": "العربية"
+    },
+    "home": {
+      "tagline": "Treatment helps individuals quit, while (Reset Your Breath) policies help prevent people from starting and support those trying to quit.",
+      "exploreScience": "Explore the Science",
+      "subgroup": "Subgroup N1"
+    },
+    "science": {
+      "title": "Understanding the Impact (The Science)",
+      "subtitle": "Discover how nicotine affects the brain and how the lungs can heal when you quit smoking.",
+      "topics": {
+        "physiology": {
+          "title": "The Physiology of Addiction: \"How nicotine affects the reward system in the brain?\"",
+          "body": "Nicotine is the main chemical in tobacco that makes smoking addictive, even though people know it is harmful. It affects the brain's reward system by increasing dopamine, a chemical that creates feelings of pleasure and motivation. Nicotine attaches to special receptors in the brain, which activate brain cells linked to reward and addiction. Over time, the brain becomes used to nicotine and starts depending on it to feel normal. When a person stops using nicotine, withdrawal symptoms can occur. These symptoms are linked to other brain receptors involved in stress and cravings."
+        },
+        "respiratory": {
+          "title": "Respiratory Restoration: \"How the Lungs heal?\"",
+          "body": "Another remarkable discovery in respiratory health is the lungs' inherent ability to heal themselves. This includes the presence of stem cells that aid in repairing airways and alveoli, especially effective when inflammation is low. Cilia, which cleans the lungs from mucus, can regrow within two weeks after damage, particularly if smoking is ceased or toxin exposure is reduced. Although severe damage to alveoli is irreversible, the healing process can enhance lung health and flexibility."
+        }
+      }
+    },
+    "nav": {
+      "home": "Home",
+      "science": "The Science",
+      "changeLanguage": "Change Language"
+    }
+  },
+  "homeContent": {
+    "navLabels": {
+      "home": "Home",
+      "science": "Science",
+      "community": "Community",
+      "products": "Products",
+      "cost": "Cost",
+      "treatment": "Treatment",
+      "track": "Track"
+    },
+    "overline": "A bilingual quit-smoking companion",
+    "headline": "Reset your breath. Reclaim your life.",
+    "headlineHighlight": "breath",
+    "description": "Treatment helps individuals quit, while Reset Your Breath policies help prevent people from starting and support those trying to quit.",
+    "cta": "Today, I choose myself",
+    "howItWorks": "How it works",
+    "cardQuote": "Today, I choose myself.",
+    "cardSubquote": "Take one breath. Then the next.",
+    "stats": [
+      {
+        "value": "20 min",
+        "label": "heart rate starts to normalise"
+      },
+      {
+        "value": "50–70%",
+        "label": "higher quit odds with NRT"
+      },
+      {
+        "value": "1 year",
+        "label": "heart-disease risk halved"
+      }
+    ],
+    "bottomSection": "How it works",
+    "ctaSection": {
+      "title": "Ready to choose yourself?",
+      "subtitle": "It takes one decision today — and a tracker that keeps you going."
+    },
+    "footerContent": {
+      "tagline": "A small step toward quitting is a step toward a better life.",
+      "explore": "Explore",
+      "reminders": "Friendly reminders",
+      "reminderItems": [
+        "Phone notifications",
+        "Daily motivational messages",
+        "Gentle check-ins",
+        "Always one tap away"
+      ],
+      "copyright": "Educational health initiative. Not a substitute for professional medical care."
+    }
+  },
+  "campaignContent": {
+    "cta": "Today, I choose myself",
+    "signup": {
+      "title": "Personal Information",
+      "subtitle": "Tell us about yourself so we can personalize your quit journey.",
+      "email": "Gmail",
+      "name": "Name",
+      "age": "Age",
+      "gender": "Gender",
+      "smokingSince": "Since when have you started smoking?",
+      "cigarettesPerDay": "How many cigarettes do you usually smoke (Average)?",
+      "whyStarted": "Why did you start smoking?",
+      "quitDate": "When did you quit (or plan to quit)?",
+      "costPerCigarette": "Price per cigarette (EGP)",
+      "sections": {
+        "personal": "Personal Details",
+        "smoking": "Smoking History"
+      },
+      "submit": "Continue",
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female"
+      }
+    },
+    "importance": {
+      "title": "Why Reclaim Your Breath?",
+      "body": "\"Reclaim Your Breath\" is a campaign aimed at encouraging individuals to choose a healthier, smoke-free life. It highlights the detrimental effects of smoking on mental health, relationships, and overall quality of life. Additionally, this campaign offers every method to help people stop smoking. The campaign stresses the significance of taking initial steps toward change, symbolized by the phrase \"Reclaim Your Breath,\" which embodies freedom and the opportunity for recovery. It seeks to raise awareness of smoking's negative impacts and motivate people to believe in their ability to change, emphasizing that each small step toward quitting contributes to a better life.",
+      "nextCalculator": "Smoking Damage Calculator",
+      "nextTreatment": "Explore Treatment Options"
+    },
+    "calculator": {
+      "badge": "Smoking damage calculator",
+      "title": "What is it really costing you?",
+      "subtitle": "Adjust your habit below to see the money — and the time — smoking takes from you.",
+      "cigarettesLabel": "Cigarettes per day",
+      "packLabel": "Price per pack (20 cigarettes)",
+      "costLabel": "Price per cigarette (EGP)",
+      "currencyLabel": "Currency",
+      "perDay": "per day",
+      "perMonth": "per month",
+      "perYear": "per year",
+      "cigarettesYear": "cigarettes / year",
+      "fiveYears": "over 5 years — money you could keep",
+      "savedNote": "These numbers are saved and power the savings on your tracker.",
+      "priceNote": "Default price: 5 EGP per cigarette",
+      "dailyCost": "Daily",
+      "monthlyCost": "Monthly",
+      "yearlyCost": "Yearly",
+      "tenYearsCost": "In 10 years",
+      "savingsTitle": "How much can you save?",
+      "saveIfQuit": "If you quit completely",
+      "saveIfHalf": "If you cut down to half",
+      "example": "Example: 20 cigarettes/day × 5 EGP = 100 EGP/day",
+      "nextProgress": "Track Your Progress",
+      "nextTreatment": "View Treatment Options"
+    },
+    "nav": {
+      "campaign": "Campaign",
+      "treatment": "Treatment",
+      "progress": "Progress"
+    }
+  },
+  "communityContent": {
+    "badge": "Community",
+    "title": "Community videos",
+    "subtitle": "Watch curated videos that support your quit journey.",
+    "videos": {
+      "stopSmoking": "What happens when you stop smoking",
+      "helpfulGuide": "A helpful guide to stop smoking",
+      "quitAllTypes": "How to quit all types of smoking (vapes)",
+      "timeline": "Quitting smoking timeline",
+      "bodyEffects": "What happens to your body when you stop smoking",
+      "healthDaily": "How smoking affects your health and daily life",
+      "breakHabit": "A simple way to break a habit (smoking)",
+      "top5Reasons": "Top 5 reasons to quit smoking",
+      "mohCampaign": "Ministry of Health campaign video",
+      "khetafStory": "Khetaf's quit smoking story",
+      "hossamWarning": "Dr. Hossam warns about smoking dangers",
+      "cartoonMotivate": "Cartoon film motivating quitting",
+      "suddenChanges": "Sudden body changes after quitting",
+      "oneMonthEffects": "How quitting affects your body in one month",
+      "explainQuit": "Video explaining how to quit smoking",
+      "photographic": "Photographic video to help you quit"
+    }
+  },
+  "productsContent": {
+    "badge": "Products",
+    "title": "Products",
+    "subtitle": "Purchase links and how-to videos for quit-smoking products.",
+    "whereToBuy": "Where to buy",
+    "howToUse": "How to use",
+    "items": {
+      "champix": {
+        "title": "Champix",
+        "videoLabel": "How to use Champix",
+        "buyLabel": "Champix on Vezeeta"
+      },
+      "nrt": {
+        "title": "Nicotine Replacement Therapy (NRT)",
+        "videoLabel": "How to use NRT",
+        "gumBuy": "Nicotine Gum",
+        "lozengesBuy": "Nicotine Lozenges"
+      },
+      "lozenges": {
+        "title": "Nicotine Lozenges",
+        "videoLabel": "How to use nicotine lozenges",
+        "buyLabel": "Buy on Amazon"
+      },
+      "patches": {
+        "title": "Nicotine Patches",
+        "videoLabel": "How to use nicotine patches",
+        "buyLabel": "Buy on Amazon"
+      },
+      "inhalers": {
+        "title": "Nicotine Inhalers",
+        "videoLabel": "How to use nicotine inhalers",
+        "buyLabel": "Buy on Amazon"
+      },
+      "nasalSprays": {
+        "title": "Nicotine Nasal Sprays",
+        "videoLabel": "How to use nicotine nasal spray",
+        "buyLabel": "Buy on Amazon"
+      }
+    }
+  },
+  "progressContent": {
+    "title": "Progress Tracking",
+    "subtitle": "Track your smoke-free days, health improvements, and money saved.",
+    "streak": "Days Without Smoking",
+    "currentBadge": "Current Badge",
+    "nextMilestone": "Next Milestone",
+    "daysToGo": "days to go",
+    "moneySaved": "Money Saved",
+    "moneyBefore": "Would have spent",
+    "moneyAfter": "Saved since quitting",
+    "healthTitle": "Health Improvements After Quitting Smoking",
+    "feelingQuestion": "Are you feeling this improvement?",
+    "yes": "Yes",
+    "no": "No",
+    "notifications": {
+      "title": "Friendly Reminders",
+      "subtitle": "Stay motivated with daily reminders and motivational messages.",
+      "enable": "Enable daily reminders",
+      "phone": "Phone notifications",
+      "messages": "Reminder messages",
+      "access": "Easy access to the website",
+      "motivational": "Daily motivational messages",
+      "sampleMessages": [
+        "Every smoke-free day is a victory. Keep going!",
+        "Your lungs are healing. Breathe freely today.",
+        "You chose yourself. That takes courage."
+      ]
+    },
+    "noProfile": "Please complete your personal information first to track progress.",
+    "signupLink": "Complete Sign Up",
+    "milestones": {
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "diamond": "Diamond",
+      "platinum": "Platinum",
+      "champion": "Champion",
+      "conqueror": "Conqueror",
+      "master": "Master",
+      "reclaimer": "Reclaimer"
+    },
+    "healthTimeline": {
+      "t20m": {
+        "timeframe": "After 20 Minutes",
+        "improvements": [
+          "Heart rate begins to return to normal",
+          "Blood pressure starts to decrease",
+          "Blood circulation improves"
+        ]
+      },
+      "t8h": {
+        "timeframe": "After 8–12 Hours",
+        "improvements": [
+          "Carbon monoxide levels in the blood drop",
+          "Oxygen levels return closer to normal",
+          "The body starts removing toxic gases from cigarettes"
+        ]
+      },
+      "t1d": {
+        "timeframe": "After 24 Hours (1 Day)",
+        "improvements": [
+          "Risk of heart attack begins to decrease",
+          "Nicotine starts leaving the body",
+          "Lungs begin clearing mucus and smoke debris"
+        ]
+      },
+      "t2d": {
+        "timeframe": "After 48 Hours (2 Days)",
+        "improvements": [
+          "Sense of taste improves",
+          "Sense of smell becomes stronger",
+          "Nerve endings begin to recover"
+        ]
+      },
+      "t2w": {
+        "timeframe": "After 2 Weeks to 3 Months",
+        "improvements": [
+          "Blood circulation improves significantly",
+          "Lung function increases",
+          "Walking and exercise become easier",
+          "Coughing and shortness of breath decrease"
+        ]
+      },
+      "t1m": {
+        "timeframe": "After 1 to 9 Months",
+        "improvements": [
+          "Cilia in the lungs recover and work better",
+          "Risk of infections decreases",
+          "Energy levels improve",
+          "Chronic coughing becomes less frequent"
+        ]
+      },
+      "t1y": {
+        "timeframe": "After 1 Year",
+        "improvements": [
+          "Risk of coronary heart disease becomes about 50% lower than a smoker's",
+          "Heart works more efficiently"
+        ]
+      },
+      "t2y": {
+        "timeframe": "After 2 Years",
+        "improvements": [
+          "Risk of stroke begins approaching that of a non-smoker",
+          "Overall cardiovascular health improves greatly",
+          "Cravings and nicotine dependence are usually much lower"
+        ]
+      },
+      "t3y": {
+        "timeframe": "After 3 Years",
+        "improvements": [
+          "Risk of heart disease can become close to that of a non-smoker",
+          "Lung function continues improving",
+          "Breathing becomes easier",
+          "Risk of several smoking-related diseases decreases significantly"
+        ]
+      }
+    }
+  },
+  "treatmentContent": {
+    "title": "Treatment",
+    "subtitle": "Psychological and medical support to help you quit smoking.",
+    "tabs": {
+      "medical": "Medical Treatment",
+      "nrt": "Nicotine Replacement Therapy",
+      "psychological": "Psychological Treatment",
+      "mohp": "MOHP Role"
+    },
+    "medical": {
+      "intro": "Medical treatment of smoking is usually divided into 2 groups, Medications and NRT (Nicotine Replacement Therapy).",
+      "champix": {
+        "title": "Champix",
+        "mechanism": {
+          "title": "The Mechanism",
+          "body": "The active ingredient in Champix is varenicline, which works by attaching to the same receptors in the brain that nicotine normally affects. It works in two ways: first, it partially acts like nicotine to help reduce cravings and withdrawal symptoms, and second, it blocks nicotine from attaching to these receptors, which reduces the pleasure people usually feel from smoking. This helps make quitting smoking easier and lowers the urge to smoke again."
+        },
+        "why": {
+          "title": "Why Champix?",
+          "body": "Champix has been studied in two main trials in 2,052 smokers. The first trial offered 12-week treatments of Champix, bupropion (Zyban) or placebo, with a quitting target one week after starting treatment. The outcome was measured as the proportion of patients who had not smoked for four weeks, verified by breath analysis. Champix was more effective than bupropion or placebo in helping patients to stop smoking. The percentage of patients who had not smoked at all during weeks 9-12 was 44% with Champix, 30% with bupropion, and 18% with placebo."
+        },
+        "risks": {
+          "title": "What is the risk associated with Champix?",
+          "body": "The most common side-effects with Champix (seen in more than 1 patient in 10) are nausea (feeling sick), insomnia (difficulty sleeping), abnormal dreams, headache and nasopharyngitis (inflammation of the nose and throat)."
+        },
+        "whereToBuy": "Where to Buy",
+        "video": "Video: How to Use Champix",
+        "videoLabel": "How to Use Champix"
+      }
+    },
+    "nrt": {
+      "intro": {
+        "title": "Nicotine Replacement Therapy (NRT)",
+        "paragraphs": [
+          "Nicotine replacement therapy (NRT) can help you quit smoking. NRT products contain low, controlled doses of nicotine to keep withdrawal and craving symptoms at bay. There are several options and ways you can combine the products. It's best to talk to a healthcare provider before starting NRT.",
+          "Nicotine replacement therapy (NRT) involves using products (like gum and patches) with low doses of nicotine to cut down on cravings and lessen withdrawal symptoms after you quit smoking. It's a type of medication-assisted treatment (MAT) for people with nicotine dependence (tobacco use disorder).",
+          "The nicotine products for NRT don't contain the other toxins (like carcinogens) that smoking exposes you to. Experts state that NRT is generally safe for almost all adults who want to quit smoking. But pregnant women and teens shouldn't use NRT. Certain health conditions, like liver or kidney issues, may make NRT unsafe as well. Discuss NRT with a healthcare provider before starting it."
+        ]
+      },
+      "productLabels": {
+        "Gum": "Gum",
+        "Lozenges": "Lozenges",
+        "Skin patches": "Skin patches",
+        "Inhalers": "Inhalers",
+        "Nasal sprays": "Nasal sprays"
+      },
+      "sections": {
+        "gum": {
+          "title": "How to use nicotine gum",
+          "content": [
+            "Nicotine gum is an over the counter (OTC) product. You chew on the gum to release the nicotine. Once you get a tingling feeling or it develops a peppery taste, you position the gum between your cheek and gum for about 30 minutes.",
+            "Wait at least 15 minutes after drinking caffeine-containing beverages and acidic beverages before chewing. You can typically use a piece of gum every one to two hours for the first six weeks. Following six weeks, reduce use gradually. Don't use more than one piece at a time. Plan to stop using the gum by 12 weeks."
+          ],
+          "videoLabel": "How to use nicotine gum",
+          "buyLinks": {
+            "gum": "Nicotine Gum",
+            "lozenges": "Nicotine Lozenges"
+          }
+        },
+        "lozenges": {
+          "title": "How to use nicotine lozenges",
+          "content": [
+            "Nicotine lozenges are OTC products that you put in your mouth between your cheek and gums (like hard candy or a cough drop). The lozenge slowly releases nicotine as it dissolves in your mouth.",
+            "You can typically use one lozenge every one to two hours for the first six weeks. Following six weeks, reduce use to one lozenge every two to four hours, then every four to eight hours. Don't use more than one lozenge at a time."
+          ],
+          "videoLabel": "How to use nicotine lozenges",
+          "buyLabel": "Buy Lozenges"
+        },
+        "patches": {
+          "title": "How to use nicotine patches",
+          "content": [
+            "Nicotine patches are OTC products you place on your skin in the morning that give a small, steady dose of nicotine throughout the day.",
+            "The nicotine patch comes in different strengths. You typically wear one patch for 16 or 24 hours. Put the patch on clean, dry, healthy and hair-free skin on your upper body. Mix up where you put the patch each day."
+          ],
+          "videoLabel": "How to use nicotine patches",
+          "buyLabel": "Buy Patches"
+        },
+        "inhalers": {
+          "title": "How to use nicotine inhalers",
+          "content": [
+            "Nicotine inhalers require a prescription from a healthcare provider. The cartridge contains nicotine, and you inhale a controlled dose through a mouthpiece. The back of your throat mainly absorbs the nicotine, not your lungs.",
+            "Take frequent short, shallow puffs from the inhaler. Don't inhale deeply. Don't eat or drink for 15 minutes before using the inhaler or while using it. Nicotine inhalers aren't the same as e-cigarettes (vaping)."
+          ],
+          "videoLabel": "How to use nicotine inhalers",
+          "buyLabel": "Buy Inhaler"
+        },
+        "nasalSpray": {
+          "title": "How to use nicotine nasal sprays",
+          "content": [
+            "Nicotine nasal sprays require a prescription. They're pump bottles that contain nicotine in liquid form that you spray into each nostril. Levels of nicotine peak within five to 10 minutes after using the spray.",
+            "Providers typically recommend using at least eight doses per day for the first six weeks. Don't use more than 40 doses per day. You shouldn't use nicotine nasal spray for longer than three months."
+          ],
+          "videoLabel": "How to use nicotine nasal spray",
+          "buyLabel": "Buy Nasal Spray"
+        }
+      },
+      "combining": {
+        "title": "Combining NRT products",
+        "body": "NRT products work differently, so you may benefit from using more than one product. Using a long-acting product (a nicotine patch) can help lessen withdrawal, while using a short-acting product can quickly relieve cravings. You can combine gum, lozenges, inhaler, or nasal spray with a nicotine patch. Talk to your healthcare provider about the best and safest way to combine NRT products for you."
+      },
+      "risksBenefits": {
+        "title": "Risks / Benefits",
+        "advantages": {
+          "title": "What are the advantages of NRT?",
+          "body": "Using NRT effectively reduces the urge to smoke cigarettes by providing your body with nicotine through safer products. Studies show that using NRT helps increase the chances of quitting smoking by about 50% to 70%."
+        },
+        "sideEffects": {
+          "title": "What are the side effects of NRT?",
+          "general": [
+            "Nausea",
+            "Headache",
+            "Racing heart"
+          ],
+          "patches": [
+            "Skin irritation",
+            "Sleep problems or unusual dreams"
+          ],
+          "gum": [
+            "Throat irritation",
+            "Mouth sores",
+            "Hiccups"
+          ]
+        },
+        "poisoning": {
+          "title": "Nicotine poisoning",
+          "body": "It's essential to use NRT products as they're intended. Using them too often or taking them while continuing to smoke can lead to nicotine poisoning. Go to the emergency room if you or your child have symptoms like nausea, vomiting, increased heart rate, dizziness, or seizures."
+        }
+      },
+      "recovery": {
+        "title": "Recovery and Outlook",
+        "duration": "Healthcare providers recommend using NRT for eight to 12 weeks. If NRT hasn't significantly helped by this point, talk to your provider about next steps.",
+        "alternatives": "If NRT doesn't work for you, your provider may recommend varenicline or bupropion, or different NRT products or doses. Addressing psychological, emotional and social elements is also crucial."
+      },
+      "teamNote": {
+        "title": "A note from RESET YOUR BREATH TEAM",
+        "body": "Choosing to quit smoking is a huge step toward living a healthier life. But it's also daunting and challenging. Nicotine replacement therapy (NRT) can help make the quitting process a little easier. Talk to a healthcare provider to see if NRT is right for you."
+      },
+      "whereToBuy": "Where to buy",
+      "videos": "Videos"
+    },
+    "psychological": {
+      "title": "Psychological Treatment",
+      "methods": [
+        {
+          "title": "Cognitive Behavioral Therapy (CBT)",
+          "description": "CBT helps smokers identify triggers, change negative thoughts linked to cigarettes, and learn coping strategies instead of smoking.",
+          "example": "Instead of thinking \"Smoking relaxes me,\" the smoker learns other relaxation methods like exercise or breathing techniques."
+        },
+        {
+          "title": "Behavioral Therapy",
+          "description": "Focuses on changing smoking habits through reward systems, habit replacement, avoiding triggers, and creating daily non-smoking routines.",
+          "example": "Chewing gum or drinking water whenever cravings appear."
+        },
+        {
+          "title": "Motivational Interviewing",
+          "description": "A counselor helps increase motivation to quit, resolve doubts and fears, and build confidence. Useful for smokers unsure about quitting."
+        },
+        {
+          "title": "Support Groups and Group Therapy",
+          "description": "Group sessions help by sharing experiences, receiving emotional support, learning from success stories, and reducing isolation."
+        },
+        {
+          "title": "Stress Management Techniques",
+          "description": "Teaches deep breathing, meditation, mindfulness, time management, and physical activity to reduce the urge to smoke during stress."
+        },
+        {
+          "title": "Relapse Prevention Therapy",
+          "description": "Helps recognize high-risk situations, prepare for cravings, recover quickly if relapse happens, and maintain long-term abstinence."
+        },
+        {
+          "title": "Family and Social Support",
+          "description": "Encouragement from family and friends improves quitting success by providing emotional support, reducing exposure to smoking environments, and increasing accountability."
+        }
+      ]
+    },
+    "mohp": {
+      "title": "MOHP Role",
+      "subtitle": "The Ministry of Health and Population's strategy for tobacco control in Egypt.",
+      "sections": [
+        {
+          "title": "National Anti-Smoking Awareness Campaigns",
+          "body": "MOHP launched several media campaigns to educate people about the dangers of smoking. One famous campaign was \"Save Yourself\", which showed how smoking damages arteries and causes strokes and heart disease. The ministry also included anti-smoking awareness in the presidential \"100 Million Healthy Lives\" initiative.",
+          "bullets": [
+            "Lung cancer",
+            "Heart disease",
+            "Passive smoking",
+            "The importance of quitting tobacco"
+          ]
+        },
+        {
+          "title": "Smoking Cessation Clinics",
+          "body": "MOHP established free smoking cessation clinics across Egypt. These clinics provide medical consultation, psychological support, follow-up programs, and medications for nicotine addiction. More than 30 clinics were opened nationwide."
+        },
+        {
+          "title": "Smoke-Free Policies",
+          "body": "The ministry introduced strict rules banning smoking inside hospitals, health facilities, and government health institutions. In 2023, the Minister of Health permanently banned smoking in all health facilities and imposed fines on violators."
+        },
+        {
+          "title": "Cooperation with WHO and International Programs",
+          "body": "MOHP cooperates with WHO under the Framework Convention on Tobacco Control, including increasing taxes on cigarettes, graphic warning images, banning tobacco advertisements, and monitoring smoking rates."
+        },
+        {
+          "title": "Early Detection and Lung Health Initiatives",
+          "body": "Programs for early detection of lung cancer, lung health screening, and helping smokers identify respiratory diseases early encourage smokers to stop before developing severe complications."
+        },
+        {
+          "title": "Research and Data Collection",
+          "body": "MOHP conducts studies with WHO about smoking prevalence, shisha use among youth, economic damage caused by tobacco, and passive smoking exposure to create stronger anti-smoking policies."
+        }
+      ],
+      "impact": {
+        "title": "Overall Impact",
+        "bullets": [
+          "Prevention through awareness",
+          "Treatment through cessation clinics",
+          "Protection through smoke-free laws",
+          "Policy enforcement through taxation and advertising bans"
+        ]
+      }
+    }
+  },
+  "assessmentContent": {
+    "title": "Nicotine Dependence Assessment",
+    "subtitle": "Answer these questions to understand your addiction level and get personalized guidance.",
+    "step": "Step 2 of the campaign",
+    "submit": "See My Result",
+    "continue": "Continue to Campaign",
+    "yourScore": "Your Total Score",
+    "severity": "Addiction Severity",
+    "scoringTitle": "Scoring Guide",
+    "resultTitle": "Your Assessment Result",
+    "recommendation": "What this means for you",
+    "questions": {
+      "firstCigarette": {
+        "question": "How soon after waking do you smoke your first cigarette?",
+        "options": [
+          "Within 5 minutes",
+          "6–30 minutes",
+          "31–60 minutes",
+          "After 60 minutes"
+        ]
+      },
+      "forbiddenPlaces": {
+        "question": "Do you find it difficult to refrain from smoking in places where it is forbidden?",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      },
+      "hardestCigarette": {
+        "question": "Which cigarette would you hate most to give up?",
+        "options": [
+          "The first one in the morning",
+          "Any other"
+        ]
+      },
+      "cigarettesPerDay": {
+        "question": "How many cigarettes do you smoke per day?",
+        "options": [
+          "10 or less",
+          "11–20",
+          "21–30",
+          "31 or more"
+        ]
+      },
+      "morningMore": {
+        "question": "Do you smoke more during the first hours after waking than during the rest of the day?",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      },
+      "smokeWhenIll": {
+        "question": "Do you smoke even when you are so ill that you stay in bed most of the day?",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      },
+      "cravings": {
+        "question": "How strong are your cravings for cigarettes?",
+        "options": [
+          "None or mild",
+          "Moderate",
+          "Strong",
+          "Very strong"
+        ]
+      },
+      "quitAttempts": {
+        "question": "How many times have you tried to quit and failed?",
+        "options": [
+          "Never tried",
+          "1–2 times",
+          "3 or more times"
+        ]
+      },
+      "unwantedSmoking": {
+        "question": "Do you smoke even when you don't really want to?",
+        "options": [
+          "Never",
+          "Sometimes",
+          "Often"
+        ]
+      }
+    },
+    "severityLevels": {
+      "veryMild": {
+        "label": "Very Mild",
+        "interpretation": "Smoking is more habit-driven than dependence-driven."
+      },
+      "mild": {
+        "label": "Mild",
+        "interpretation": "Smoking is more habit-driven than dependence-driven."
+      },
+      "moderate": {
+        "label": "Moderate",
+        "interpretation": "Noticeable physical and psychological dependence."
+      },
+      "severe": {
+        "label": "Severe",
+        "interpretation": "Strong nicotine dependence with frequent cravings."
+      },
+      "verySevere": {
+        "label": "Very Severe",
+        "interpretation": "High risk of withdrawal symptoms and difficulty quitting without structured support."
+      }
+    },
+    "scoringTable": {
+      "veryMild": "Very Mild",
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "severe": "Severe",
+      "verySevere": "Very Severe"
+    }
+  }
+}

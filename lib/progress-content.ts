@@ -1,261 +1,159 @@
-import type { Locale } from "./i18n";
-
-type Bilingual = Record<Locale, string>;
-
-export type Milestone = {
-  days: number;
-  badge: Bilingual;
-  color: string;
-};
+import type { Locale, Bilingual, Milestone, HealthImprovement } from "@/types";
+import en from "@/messages/en.json";
+import ar from "@/messages/ar.json";
 
 export const milestones: Milestone[] = [
-  { days: 1, badge: { en: "Bronze", ar: "برونزي" }, color: "#cd7f32" },
-  { days: 3, badge: { en: "Silver", ar: "فضي" }, color: "#c0c0c0" },
-  { days: 7, badge: { en: "Gold", ar: "ذهبي" }, color: "#ffd700" },
-  { days: 30, badge: { en: "Diamond", ar: "ماسي" }, color: "#b9f2ff" },
-  { days: 90, badge: { en: "Platinum", ar: "بلاتيني" }, color: "#e5e4e2" },
-  { days: 180, badge: { en: "Champion", ar: "بطل" }, color: "#50c878" },
-  { days: 365, badge: { en: "Conqueror", ar: "فاتح" }, color: "#4169e1" },
-  { days: 730, badge: { en: "Master", ar: "خبير" }, color: "#9932cc" },
-  { days: 1095, badge: { en: "Reclaimer", ar: "مستعيد" }, color: "#008080" },
+  { days: 1, badge: { en: en.progressContent.milestones.bronze, ar: ar.progressContent.milestones.bronze }, color: "#cd7f32" },
+  { days: 3, badge: { en: en.progressContent.milestones.silver, ar: ar.progressContent.milestones.silver }, color: "#c0c0c0" },
+  { days: 7, badge: { en: en.progressContent.milestones.gold, ar: ar.progressContent.milestones.gold }, color: "#ffd700" },
+  { days: 30, badge: { en: en.progressContent.milestones.diamond, ar: ar.progressContent.milestones.diamond }, color: "#b9f2ff" },
+  { days: 90, badge: { en: en.progressContent.milestones.platinum, ar: ar.progressContent.milestones.platinum }, color: "#e5e4e2" },
+  { days: 180, badge: { en: en.progressContent.milestones.champion, ar: ar.progressContent.milestones.champion }, color: "#50c878" },
+  { days: 365, badge: { en: en.progressContent.milestones.conqueror, ar: ar.progressContent.milestones.conqueror }, color: "#4169e1" },
+  { days: 730, badge: { en: en.progressContent.milestones.master, ar: ar.progressContent.milestones.master }, color: "#9932cc" },
+  { days: 1095, badge: { en: en.progressContent.milestones.reclaimer, ar: ar.progressContent.milestones.reclaimer }, color: "#008080" },
 ];
-
-export type HealthImprovement = {
-  id: string;
-  timeframe: Bilingual;
-  improvements: Bilingual[];
-};
 
 export const healthImprovements: HealthImprovement[] = [
   {
     id: "20min",
-    timeframe: { en: "After 20 Minutes", ar: "بعد 20 دقيقة" },
+    timeframe: { en: en.progressContent.healthTimeline.t20m.timeframe, ar: ar.progressContent.healthTimeline.t20m.timeframe },
     improvements: [
-      {
-        en: "Heart rate begins to return to normal",
-        ar: "يبدأ معدل ضربات القلب في العودة إلى طبيعته",
-      },
-      {
-        en: "Blood pressure starts to decrease",
-        ar: "يبدأ ضغط الدم في الانخفاض",
-      },
-      {
-        en: "Blood circulation improves",
-        ar: "يتحسن الدورة الدموية",
-      },
+      { en: en.progressContent.healthTimeline.t20m.improvements[0], ar: ar.progressContent.healthTimeline.t20m.improvements[0] },
+      { en: en.progressContent.healthTimeline.t20m.improvements[1], ar: ar.progressContent.healthTimeline.t20m.improvements[1] },
+      { en: en.progressContent.healthTimeline.t20m.improvements[2], ar: ar.progressContent.healthTimeline.t20m.improvements[2] },
     ],
   },
   {
     id: "8-12h",
-    timeframe: { en: "After 8–12 Hours", ar: "بعد 8–12 ساعة" },
+    timeframe: { en: en.progressContent.healthTimeline.t8h.timeframe, ar: ar.progressContent.healthTimeline.t8h.timeframe },
     improvements: [
-      {
-        en: "Carbon monoxide levels in the blood drop",
-        ar: "تنخفض مستويات أول أكسيد الكربون في الدم",
-      },
-      {
-        en: "Oxygen levels return closer to normal",
-        ar: "تعود مستويات الأكسجين إلى طبيعتها",
-      },
-      {
-        en: "The body starts removing toxic gases from cigarettes",
-        ar: "يبدأ الجسم في إزالة الغازات السامة من السجائر",
-      },
+      { en: en.progressContent.healthTimeline.t8h.improvements[0], ar: ar.progressContent.healthTimeline.t8h.improvements[0] },
+      { en: en.progressContent.healthTimeline.t8h.improvements[1], ar: ar.progressContent.healthTimeline.t8h.improvements[1] },
+      { en: en.progressContent.healthTimeline.t8h.improvements[2], ar: ar.progressContent.healthTimeline.t8h.improvements[2] },
     ],
   },
   {
     id: "1day",
-    timeframe: { en: "After 24 Hours (1 Day)", ar: "بعد 24 ساعة (يوم واحد)" },
+    timeframe: { en: en.progressContent.healthTimeline.t1d.timeframe, ar: ar.progressContent.healthTimeline.t1d.timeframe },
     improvements: [
-      {
-        en: "Risk of heart attack begins to decrease",
-        ar: "يبدأ خطر الإصابة بنوبة قلبية في الانخفاض",
-      },
-      {
-        en: "Nicotine starts leaving the body",
-        ar: "يبدأ النيكوتين في مغادرة الجسم",
-      },
-      {
-        en: "Lungs begin clearing mucus and smoke debris",
-        ar: "تبدأ الرئتان في تنظيف المخاط وبقايا الدخان",
-      },
+      { en: en.progressContent.healthTimeline.t1d.improvements[0], ar: ar.progressContent.healthTimeline.t1d.improvements[0] },
+      { en: en.progressContent.healthTimeline.t1d.improvements[1], ar: ar.progressContent.healthTimeline.t1d.improvements[1] },
+      { en: en.progressContent.healthTimeline.t1d.improvements[2], ar: ar.progressContent.healthTimeline.t1d.improvements[2] },
     ],
   },
   {
     id: "2days",
-    timeframe: { en: "After 48 Hours (2 Days)", ar: "بعد 48 ساعة (يومان)" },
+    timeframe: { en: en.progressContent.healthTimeline.t2d.timeframe, ar: ar.progressContent.healthTimeline.t2d.timeframe },
     improvements: [
-      {
-        en: "Sense of taste improves",
-        ar: "يتحسن حاسة التذوق",
-      },
-      {
-        en: "Sense of smell becomes stronger",
-        ar: "تصبح حاسة الشم أقوى",
-      },
-      {
-        en: "Nerve endings begin to recover",
-        ar: "تبدأ النهايات العصبية في التعافي",
-      },
+      { en: en.progressContent.healthTimeline.t2d.improvements[0], ar: ar.progressContent.healthTimeline.t2d.improvements[0] },
+      { en: en.progressContent.healthTimeline.t2d.improvements[1], ar: ar.progressContent.healthTimeline.t2d.improvements[1] },
+      { en: en.progressContent.healthTimeline.t2d.improvements[2], ar: ar.progressContent.healthTimeline.t2d.improvements[2] },
     ],
   },
   {
     id: "2weeks-3months",
-    timeframe: {
-      en: "After 2 Weeks to 3 Months",
-      ar: "بعد أسبوعين إلى 3 أشهر",
-    },
+    timeframe: { en: en.progressContent.healthTimeline.t2w.timeframe, ar: ar.progressContent.healthTimeline.t2w.timeframe },
     improvements: [
-      {
-        en: "Blood circulation improves significantly",
-        ar: "تتحسن الدورة الدموية بشكل كبير",
-      },
-      {
-        en: "Lung function increases",
-        ar: "تزداد وظائف الرئة",
-      },
-      {
-        en: "Walking and exercise become easier",
-        ar: "يصبح المشي والتمرين أسهل",
-      },
-      {
-        en: "Coughing and shortness of breath decrease",
-        ar: "يقل السعال وضيق التنفس",
-      },
+      { en: en.progressContent.healthTimeline.t2w.improvements[0], ar: ar.progressContent.healthTimeline.t2w.improvements[0] },
+      { en: en.progressContent.healthTimeline.t2w.improvements[1], ar: ar.progressContent.healthTimeline.t2w.improvements[1] },
+      { en: en.progressContent.healthTimeline.t2w.improvements[2], ar: ar.progressContent.healthTimeline.t2w.improvements[2] },
+      { en: en.progressContent.healthTimeline.t2w.improvements[3], ar: ar.progressContent.healthTimeline.t2w.improvements[3] },
     ],
   },
   {
     id: "1-9months",
-    timeframe: { en: "After 1 to 9 Months", ar: "بعد 1 إلى 9 أشهر" },
+    timeframe: { en: en.progressContent.healthTimeline.t1m.timeframe, ar: ar.progressContent.healthTimeline.t1m.timeframe },
     improvements: [
-      {
-        en: "Cilia in the lungs recover and work better",
-        ar: "تتعافى الأهداب في الرئتين وتعمل بشكل أفضل",
-      },
-      {
-        en: "Risk of infections decreases",
-        ar: "ينخفض خطر الإصابة بالعدوى",
-      },
-      {
-        en: "Energy levels improve",
-        ar: "تتحسن مستويات الطاقة",
-      },
-      {
-        en: "Chronic coughing becomes less frequent",
-        ar: "يصبح السعال المزمن أقل تكراراً",
-      },
+      { en: en.progressContent.healthTimeline.t1m.improvements[0], ar: ar.progressContent.healthTimeline.t1m.improvements[0] },
+      { en: en.progressContent.healthTimeline.t1m.improvements[1], ar: ar.progressContent.healthTimeline.t1m.improvements[1] },
+      { en: en.progressContent.healthTimeline.t1m.improvements[2], ar: ar.progressContent.healthTimeline.t1m.improvements[2] },
+      { en: en.progressContent.healthTimeline.t1m.improvements[3], ar: ar.progressContent.healthTimeline.t1m.improvements[3] },
     ],
   },
   {
     id: "1year",
-    timeframe: { en: "After 1 Year", ar: "بعد سنة واحدة" },
+    timeframe: { en: en.progressContent.healthTimeline.t1y.timeframe, ar: ar.progressContent.healthTimeline.t1y.timeframe },
     improvements: [
-      {
-        en: "Risk of coronary heart disease becomes about 50% lower than a smoker's",
-        ar: "يصبح خطر الإصابة بأمراض القلب التاجية أقل بنحو 50% من المدخن",
-      },
-      {
-        en: "Heart works more efficiently",
-        ar: "يعمل القلب بكفاءة أكبر",
-      },
+      { en: en.progressContent.healthTimeline.t1y.improvements[0], ar: ar.progressContent.healthTimeline.t1y.improvements[0] },
+      { en: en.progressContent.healthTimeline.t1y.improvements[1], ar: ar.progressContent.healthTimeline.t1y.improvements[1] },
     ],
   },
   {
     id: "2years",
-    timeframe: { en: "After 2 Years", ar: "بعد سنتين" },
+    timeframe: { en: en.progressContent.healthTimeline.t2y.timeframe, ar: ar.progressContent.healthTimeline.t2y.timeframe },
     improvements: [
-      {
-        en: "Risk of stroke begins approaching that of a non-smoker",
-        ar: "يبدأ خطر السكتة الدماغية في الاقتراب من غير المدخن",
-      },
-      {
-        en: "Overall cardiovascular health improves greatly",
-        ar: "تتحسن صحة القلب والأوعية الدموية بشكل كبير",
-      },
-      {
-        en: "Cravings and nicotine dependence are usually much lower",
-        ar: "عادة ما تكون الرغبة الشديدة والاعتماد على النيكوتين أقل بكثير",
-      },
+      { en: en.progressContent.healthTimeline.t2y.improvements[0], ar: ar.progressContent.healthTimeline.t2y.improvements[0] },
+      { en: en.progressContent.healthTimeline.t2y.improvements[1], ar: ar.progressContent.healthTimeline.t2y.improvements[1] },
+      { en: en.progressContent.healthTimeline.t2y.improvements[2], ar: ar.progressContent.healthTimeline.t2y.improvements[2] },
     ],
   },
   {
     id: "3years",
-    timeframe: { en: "After 3 Years", ar: "بعد 3 سنوات" },
+    timeframe: { en: en.progressContent.healthTimeline.t3y.timeframe, ar: ar.progressContent.healthTimeline.t3y.timeframe },
     improvements: [
-      {
-        en: "Risk of heart disease can become close to that of a non-smoker",
-        ar: "يمكن أن يصبح خطر أمراض القلب قريباً من غير المدخن",
-      },
-      {
-        en: "Lung function continues improving",
-        ar: "تستمر وظائف الرئة في التحسن",
-      },
-      {
-        en: "Breathing becomes easier",
-        ar: "يصبح التنفس أسهل",
-      },
-      {
-        en: "Risk of several smoking-related diseases decreases significantly",
-        ar: "ينخفض خطر العديد من الأمراض المرتبطة بالتدخين بشكل كبير",
-      },
+      { en: en.progressContent.healthTimeline.t3y.improvements[0], ar: ar.progressContent.healthTimeline.t3y.improvements[0] },
+      { en: en.progressContent.healthTimeline.t3y.improvements[1], ar: ar.progressContent.healthTimeline.t3y.improvements[1] },
+      { en: en.progressContent.healthTimeline.t3y.improvements[2], ar: ar.progressContent.healthTimeline.t3y.improvements[2] },
+      { en: en.progressContent.healthTimeline.t3y.improvements[3], ar: ar.progressContent.healthTimeline.t3y.improvements[3] },
     ],
   },
 ];
 
 export const progressContent = {
-  title: { en: "Progress Tracking", ar: "تتبع التقدم" },
+  title: { en: en.progressContent.title, ar: ar.progressContent.title },
   subtitle: {
-    en: "Track your smoke-free days, health improvements, and money saved.",
-    ar: "تتبع أيامك الخالية من التدخين وتحسينات صحتك والمال الذي وفرته.",
+    en: en.progressContent.subtitle,
+    ar: ar.progressContent.subtitle,
   },
-  streak: { en: "Days Without Smoking", ar: "أيام بدون تدخين" },
-  currentBadge: { en: "Current Badge", ar: "الشارة الحالية" },
-  nextMilestone: { en: "Next Milestone", ar: "الهدف التالي" },
-  daysToGo: { en: "days to go", ar: "يوم متبقي" },
-  moneySaved: { en: "Money Saved", ar: "المال الموفر" },
-  moneyBefore: { en: "Would have spent", ar: "كان سينفق" },
-  moneyAfter: { en: "Saved since quitting", ar: "موفر منذ الإقلاع" },
+  streak: { en: en.progressContent.streak, ar: ar.progressContent.streak },
+  currentBadge: { en: en.progressContent.currentBadge, ar: ar.progressContent.currentBadge },
+  nextMilestone: { en: en.progressContent.nextMilestone, ar: ar.progressContent.nextMilestone },
+  daysToGo: { en: en.progressContent.daysToGo, ar: ar.progressContent.daysToGo },
+  moneySaved: { en: en.progressContent.moneySaved, ar: ar.progressContent.moneySaved },
+  moneyBefore: { en: en.progressContent.moneyBefore, ar: ar.progressContent.moneyBefore },
+  moneyAfter: { en: en.progressContent.moneyAfter, ar: ar.progressContent.moneyAfter },
   healthTitle: {
-    en: "Health Improvements After Quitting Smoking",
-    ar: "التحسينات الصحية بعد الإقلاع عن التدخين",
+    en: en.progressContent.healthTitle,
+    ar: ar.progressContent.healthTitle,
   },
   feelingQuestion: {
-    en: "Are you feeling this improvement?",
-    ar: "هل تشعر بهذا التحسن؟",
+    en: en.progressContent.feelingQuestion,
+    ar: ar.progressContent.feelingQuestion,
   },
-  yes: { en: "Yes", ar: "نعم" },
-  no: { en: "No", ar: "لا" },
+  yes: { en: en.progressContent.yes, ar: ar.progressContent.yes },
+  no: { en: en.progressContent.no, ar: ar.progressContent.no },
   notifications: {
-    title: { en: "Friendly Reminders", ar: "تذكيرات ودية" },
+    title: { en: en.progressContent.notifications.title, ar: ar.progressContent.notifications.title },
     subtitle: {
-      en: "Stay motivated with daily reminders and motivational messages.",
-      ar: "ابقَ متحمساً مع تذكيرات يومية ورسائل تحفيزية.",
+      en: en.progressContent.notifications.subtitle,
+      ar: ar.progressContent.notifications.subtitle,
     },
-    enable: { en: "Enable daily reminders", ar: "تفعيل التذكيرات اليومية" },
-    phone: { en: "Phone notifications", ar: "إشعارات الهاتف" },
-    messages: { en: "Reminder messages", ar: "رسائل التذكير" },
-    access: { en: "Easy access to the website", ar: "وصول سهل للموقع" },
-    motivational: { en: "Daily motivational messages", ar: "رسائل تحفيزية يومية" },
+    enable: { en: en.progressContent.notifications.enable, ar: ar.progressContent.notifications.enable },
+    phone: { en: en.progressContent.notifications.phone, ar: ar.progressContent.notifications.phone },
+    messages: { en: en.progressContent.notifications.messages, ar: ar.progressContent.notifications.messages },
+    access: { en: en.progressContent.notifications.access, ar: ar.progressContent.notifications.access },
+    motivational: { en: en.progressContent.notifications.motivational, ar: ar.progressContent.notifications.motivational },
     sampleMessages: [
       {
-        en: "Every smoke-free day is a victory. Keep going!",
-        ar: "كل يوم بدون تدخين هو انتصار. استمر!",
+        en: en.progressContent.notifications.sampleMessages[0],
+        ar: ar.progressContent.notifications.sampleMessages[0],
       },
       {
-        en: "Your lungs are healing. Breathe freely today.",
-        ar: "رئتاك تتعافيان. تنفس بحرية اليوم.",
+        en: en.progressContent.notifications.sampleMessages[1],
+        ar: ar.progressContent.notifications.sampleMessages[1],
       },
       {
-        en: "You chose yourself. That takes courage.",
-        ar: "لقد اخترت نفسك. هذا يتطلب شجاعة.",
+        en: en.progressContent.notifications.sampleMessages[2],
+        ar: ar.progressContent.notifications.sampleMessages[2],
       },
     ],
   },
   noProfile: {
-    en: "Please complete your personal information first to track progress.",
-    ar: "يرجى إكمال بياناتك الشخصية أولاً لتتبع التقدم.",
+    en: en.progressContent.noProfile,
+    ar: ar.progressContent.noProfile,
   },
-  signupLink: { en: "Complete Sign Up", ar: "أكمل التسجيل" },
+  signupLink: { en: en.progressContent.signupLink, ar: ar.progressContent.signupLink },
 } as const;
 
 export function pt(record: Bilingual, locale: Locale): string {

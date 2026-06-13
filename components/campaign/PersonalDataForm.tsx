@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 import { DEFAULT_CIGARETTE_PRICE } from "@/lib/calculator";
 import { campaignContent, ct } from "@/lib/campaign-content";
-import type { Locale } from "@/lib/i18n";
-import { getUserProfile, saveUserProfile } from "@/lib/user-storage";
+import type { Locale } from "@/types";
+import { getUserProfile, saveUserProfile } from "@/services/user-storage";
 
 type PersonalDataFormProps = {
   locale: Locale;

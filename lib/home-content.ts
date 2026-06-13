@@ -1,118 +1,108 @@
-import type { Locale } from "./i18n";
-
-type Bilingual = Record<Locale, string>;
+import type { Locale, Bilingual } from "@/types";
+import en from "@/messages/en.json";
+import ar from "@/messages/ar.json";
 
 export const navLabels = {
-  home: { en: "Home", ar: "الرئيسية" },
-  science: { en: "Science", ar: "العلم" },
-  community: { en: "Community", ar: "المجتمع" },
-  products: { en: "Products", ar: "المنتجات" },
-  cost: { en: "Cost", ar: "التكلفة" },
-  treatment: { en: "Treatment", ar: "العلاج" },
-  track: { en: "Track", ar: "التتبع" },
-  // support: { en: "Support", ar: "الدعم" },
+  home: { en: en.homeContent.navLabels.home, ar: ar.homeContent.navLabels.home },
+  science: { en: en.homeContent.navLabels.science, ar: ar.homeContent.navLabels.science },
+  community: { en: en.homeContent.navLabels.community, ar: ar.homeContent.navLabels.community },
+  products: { en: en.homeContent.navLabels.products, ar: ar.homeContent.navLabels.products },
+  cost: { en: en.homeContent.navLabels.cost, ar: ar.homeContent.navLabels.cost },
+  treatment: { en: en.homeContent.navLabels.treatment, ar: ar.homeContent.navLabels.treatment },
+  track: { en: en.homeContent.navLabels.track, ar: ar.homeContent.navLabels.track },
 } as const;
 
 export const homeContent = {
   overline: {
-    en: "A bilingual quit-smoking companion",
-    ar: "رفيق ثنائي اللغة للإقلاع عن التدخين",
+    en: en.homeContent.overline,
+    ar: ar.homeContent.overline,
   },
   headline: {
-    en: "Reset your breath. Reclaim your life.",
-    ar: "استعد أنفاسك. استعد حياتك.",
+    en: en.homeContent.headline,
+    ar: ar.homeContent.headline,
   },
   headlineHighlight: {
-    en: "breath",
-    ar: "أنفاسك",
+    en: en.homeContent.headlineHighlight,
+    ar: ar.homeContent.headlineHighlight,
   },
   description: {
-    en: "Treatment helps individuals quit, while Reset Your Breath policies help prevent people from starting and support those trying to quit.",
-    ar: "يساعد العلاج الأفراد على الإقلاع عن التدخين، بينما تساعد سياسات ابدأ من جديد على منع الناس من البدء ودعم من يحاولون الإقلاع.",
+    en: en.homeContent.description,
+    ar: ar.homeContent.description,
   },
   cta: {
-    en: "Today, I choose myself",
-    ar: "اليوم، أختار نفسي",
+    en: en.homeContent.cta,
+    ar: ar.homeContent.cta,
   },
   howItWorks: {
-    en: "How it works",
-    ar: "كيف يعمل",
+    en: en.homeContent.howItWorks,
+    ar: ar.homeContent.howItWorks,
   },
   cardQuote: {
-    en: "Today, I choose myself.",
-    ar: "اليوم، أختار نفسي.",
+    en: en.homeContent.cardQuote,
+    ar: ar.homeContent.cardQuote,
   },
   cardSubquote: {
-    en: "Take one breath. Then the next.",
-    ar: "خذ نفساً واحداً. ثم التالي.",
+    en: en.homeContent.cardSubquote,
+    ar: ar.homeContent.cardSubquote,
   },
   stats: [
     {
-      value: { en: "20 min", ar: "20 د" },
-      label: {
-        en: "heart rate starts to normalise",
-        ar: "يبدأ معدل ضربات القلب في التطبيع",
-      },
+      value: { en: en.homeContent.stats[0].value, ar: ar.homeContent.stats[0].value },
+      label: { en: en.homeContent.stats[0].label, ar: ar.homeContent.stats[0].label },
     },
     {
-      value: { en: "50–70%", ar: "50–70%" },
-      label: {
-        en: "higher quit odds with NRT",
-        ar: "فرص أعلى للإقلاع مع NRT",
-      },
+      value: { en: en.homeContent.stats[1].value, ar: ar.homeContent.stats[1].value },
+      label: { en: en.homeContent.stats[1].label, ar: ar.homeContent.stats[1].label },
     },
     {
-      value: { en: "1 year", ar: "سنة" },
-      label: {
-        en: "heart-disease risk halved",
-        ar: "خطر أمراض القلب ينخفض للنصف",
-      },
+      value: { en: en.homeContent.stats[2].value, ar: ar.homeContent.stats[2].value },
+      label: { en: en.homeContent.stats[2].label, ar: ar.homeContent.stats[2].label },
     },
   ],
   bottomSection: {
-    en: "How it works",
-    ar: "كيف يعمل",
+    en: en.homeContent.bottomSection,
+    ar: ar.homeContent.bottomSection,
   },
   ctaSection: {
     title: {
-      en: "Ready to choose yourself?",
-      ar: "هل أنت مستعد لاختيار نفسك؟",
+      en: en.homeContent.ctaSection.title,
+      ar: ar.homeContent.ctaSection.title,
     },
     subtitle: {
-      en: "It takes one decision today — and a tracker that keeps you going.",
-      ar: "قرار واحد اليوم — وتتبع يبقيك مستمراً.",
+      en: en.homeContent.ctaSection.subtitle,
+      ar: ar.homeContent.ctaSection.subtitle,
     },
   },
 } as const;
 
 export const footerContent = {
   tagline: {
-    en: "A small step toward quitting is a step toward a better life.",
-    ar: "خطوة صغيرة نحو الإقلاع هي خطوة نحو حياة أفضل.",
+    en: en.homeContent.footerContent.tagline,
+    ar: ar.homeContent.footerContent.tagline,
   },
-  explore: { en: "Explore", ar: "استكشف" },
-  reminders: { en: "Friendly reminders", ar: "تذكيرات ودية" },
+  explore: { en: en.homeContent.footerContent.explore, ar: ar.homeContent.footerContent.explore },
+  reminders: { en: en.homeContent.footerContent.reminders, ar: ar.homeContent.footerContent.reminders },
   reminderItems: [
     {
-      en: "Phone notifications",
-      ar: "إشعارات الهاتف",
+      en: en.homeContent.footerContent.reminderItems[0],
+      ar: ar.homeContent.footerContent.reminderItems[0],
     },
     {
-      en: "Daily motivational messages",
-      ar: "رسائل تحفيزية يومية",
+      en: en.homeContent.footerContent.reminderItems[1],
+      ar: ar.homeContent.footerContent.reminderItems[1],
     },
     {
-      en: "Gentle check-ins",
-      ar: "متابعة لطيفة",
+      en: en.homeContent.footerContent.reminderItems[2],
+      ar: ar.homeContent.footerContent.reminderItems[2],
     },
     {
-      en: "Always one tap away",
-      ar: "دائماً على بعد نقرة",
+      en: en.homeContent.footerContent.reminderItems[3],
+      ar: ar.homeContent.footerContent.reminderItems[3],
     },
   ],
   copyright: {
-    en: "Educational health initiative. Not a substitute for professional medical care.",
-    ar: "مبادرة صحية تعليمية. لا تغني عن الرعاية الطبية المتخصصة.",
+    en: en.homeContent.footerContent.copyright,
+    ar: ar.homeContent.footerContent.copyright,
   },
 } as const;
 
@@ -129,10 +119,5 @@ export function getNavLinks(locale: Locale) {
     { href: `/${locale}/campaign/calculator`, label: navLabels.cost, key: "cost" },
     { href: `/${locale}/campaign/treatment`, label: navLabels.treatment, key: "treatment" },
     { href: `/${locale}/campaign/progress`, label: navLabels.track, key: "track" },
-    // {
-    //   href: `/${locale}/campaign/treatment/psychological`,
-    //   label: navLabels.support,
-    //   key: "support",
-    // },
   ] as const;
 }

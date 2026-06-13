@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Brain, Wind } from "lucide-react";
 import { notFound } from "next/navigation";
 import { ScienceCTA } from "@/components/campaign/ScienceCTA";
@@ -15,6 +16,31 @@ const topicMeta = [
   { icon: Brain, image: siteImages.brain, variant: "violet" as const },
   { icon: Wind, image: siteImages.lungs, variant: "emerald" as const },
 ];
+
+export async function generateMetadata({ params }: SciencePageProps): Promise<Metadata> {
+  const { lang } = await params;
+  const isAr = lang === "ar";
+  return {
+    title: isAr ? "الفهم العلمي للتأثير | ابدأ من جديد" : "Science | Reset Your Breath",
+    description: isAr
+      ? "اكتشف كيف يؤثر النيكوتين على الدماغ وكيف يمكن للرئتين أن تشفيا عند الإقلاع عن التدخين."
+      : "Discover how nicotine affects the brain and how the lungs can heal when you quit smoking.",
+    openGraph: {
+      title: isAr ? "الفهم العلمي للتأثير | ابدأ من جديد" : "Science | Reset Your Breath",
+      description: isAr
+        ? "اكتشف كيف يؤثر النيكوتين على الدماغ وكيف يمكن للرئتين أن تشفيا عند الإقلاع عن التدخين."
+        : "Discover how nicotine affects the brain and how the lungs can heal when you quit smoking.",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: isAr ? "ابدأ من جديد" : "Reset Your Breath",
+        },
+      ],
+    },
+  };
+}
 
 export default async function SciencePage({ params }: SciencePageProps) {
   const { lang } = await params;
