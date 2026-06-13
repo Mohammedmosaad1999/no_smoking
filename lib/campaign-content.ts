@@ -60,18 +60,42 @@ export const campaignContent = {
     nextTreatment: { en: "Explore Treatment Options", ar: "استكشف خيارات العلاج" },
   },
   calculator: {
-    title: { en: "Smoking Damage Calculator", ar: "حاسبة أضرار التدخين" },
+    badge: {
+      en: "Smoking damage calculator",
+      ar: "حاسبة أضرار التدخين",
+    },
+    title: {
+      en: "What is it really costing you?",
+      ar: "كم يكلفك التدخين فعلاً؟",
+    },
     subtitle: {
-      en: "See how much smoking costs you — in money and health.",
-      ar: "اكتشف كم يكلفك التدخين — في المال والصحة.",
+      en: "Adjust your habit below to see the money — and the time — smoking takes from you.",
+      ar: "عدّل عادتك أدناه لترى المال — والوقت — الذي يأخذه التدخين منك.",
     },
     cigarettesLabel: {
-      en: "Number of cigarettes per day",
+      en: "Cigarettes per day",
       ar: "عدد السجائر يومياً",
+    },
+    packLabel: {
+      en: "Price per pack (20 cigarettes)",
+      ar: "سعر الباكو (20 سيجارة)",
     },
     costLabel: {
       en: "Price per cigarette (EGP)",
       ar: "سعر السيجارة (جنيه)",
+    },
+    currencyLabel: { en: "Currency", ar: "العملة" },
+    perDay: { en: "per day", ar: "في اليوم" },
+    perMonth: { en: "per month", ar: "في الشهر" },
+    perYear: { en: "per year", ar: "في السنة" },
+    cigarettesYear: { en: "cigarettes / year", ar: "سيجارة / سنة" },
+    fiveYears: {
+      en: "over 5 years — money you could keep",
+      ar: "خلال 5 سنوات — مال كان ممكن توفره",
+    },
+    savedNote: {
+      en: "These numbers are saved and power the savings on your tracker.",
+      ar: "يتم حفظ هذه الأرقام وتغذي مدخراتك في صفحة التتبع.",
     },
     priceNote: {
       en: "Default price: 5 EGP per cigarette",
@@ -90,8 +114,6 @@ export const campaignContent = {
       en: "If you cut down to half",
       ar: "لو خفّضت للنصف",
     },
-    perYear: { en: "per year", ar: "في السنة" },
-    perMonth: { en: "per month", ar: "في الشهر" },
     example: {
       en: "Example: 20 cigarettes/day × 5 EGP = 100 EGP/day",
       ar: "مثال: 20 سيجارة × 5 جنيه = 100 جنيه في اليوم",

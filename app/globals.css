@@ -432,6 +432,227 @@ h3 {
   box-shadow: 0 0 0 4px rgb(20 184 166 / 0.12);
 }
 
+.calc-page-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1a4338;
+}
+
+@media (min-width: 640px) {
+  .calc-page-badge {
+    font-size: 0.7rem;
+  }
+}
+
+.calc-inputs-card {
+  border-radius: 1.5rem;
+  border: 1px solid var(--border-light);
+  background: white;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 640px) {
+  .calc-inputs-card {
+    padding: 1.5rem;
+  }
+}
+
+.calc-field-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a4338;
+}
+
+@media (min-width: 640px) {
+  .calc-field-label {
+    font-size: 0.95rem;
+  }
+}
+
+.calc-value-input {
+  width: 4.25rem;
+  min-height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  border: 2px solid #c5ddd4;
+  background: #fafcfb;
+  padding: 0.375rem 0.25rem;
+  text-align: center;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #1a4338;
+  outline: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.calc-value-input-wide {
+  width: 4.75rem;
+}
+
+.calc-value-input:hover {
+  border-color: #9ec9b8;
+  background: white;
+}
+
+.calc-value-input:focus {
+  border-color: #1a4338;
+  background: white;
+  box-shadow: 0 0 0 3px rgb(26 67 56 / 0.12);
+}
+
+.calc-value-input::-webkit-outer-spin-button,
+.calc-value-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calc-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #1a4338 0%, #1a4338 var(--slider-progress, 50%), #d4e5df var(--slider-progress, 50%), #d4e5df 100%);
+  outline: none;
+  cursor: pointer;
+  accent-color: #1a4338;
+}
+
+[dir="rtl"] .calc-slider {
+  background: linear-gradient(270deg, #1a4338 0%, #1a4338 var(--slider-progress, 50%), #d4e5df var(--slider-progress, 50%), #d4e5df 100%);
+}
+
+.calc-slider::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: transparent;
+}
+
+.calc-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: #1a4338;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgb(26 67 56 / 0.35);
+}
+
+.calc-slider::-moz-range-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: #d4e5df;
+}
+
+.calc-slider::-moz-range-progress {
+  height: 8px;
+  border-radius: 9999px;
+  background: #1a4338;
+}
+
+.calc-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #1a4338;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgb(26 67 56 / 0.35);
+}
+
+.calc-saved-note {
+  border-radius: 0.875rem;
+  background: #e8f5f0;
+  padding: 0.875rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1a4338;
+  line-height: 1.55;
+}
+
+.calc-results-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  background: #1a4338;
+  padding: 1.25rem;
+  box-shadow: 0 16px 40px rgb(26 67 56 / 0.22);
+}
+
+@media (min-width: 640px) {
+  .calc-results-card {
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+}
+
+.calc-stat-tile {
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 0.12);
+  padding: 1rem 0.625rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .calc-stat-tile {
+    padding: 1.125rem 0.875rem;
+  }
+}
+
+.calc-stat-value {
+  font-size: clamp(1.1rem, 2.8vw, 1.55rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.calc-stat-label {
+  margin-top: 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: rgb(255 255 255 / 0.78);
+}
+
+@media (min-width: 640px) {
+  .calc-stat-label {
+    font-size: 0.75rem;
+  }
+}
+
+.calc-highlight {
+  border-radius: 1rem;
+  background: #e07a5f;
+  padding: 1.125rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .calc-highlight {
+    padding: 1.35rem 1rem;
+  }
+}
+
+.calc-highlight .calc-stat-value {
+  font-size: clamp(1.25rem, 3.5vw, 1.85rem);
+}
+
+.calc-highlight .calc-stat-label {
+  color: rgb(255 255 255 / 0.92);
+}
+
 .input-label {
   display: block;
   margin-bottom: 0.625rem;

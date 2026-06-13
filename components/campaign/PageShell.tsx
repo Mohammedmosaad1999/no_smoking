@@ -22,9 +22,19 @@ export function PageShell({
         <div
           className={`container-page ${compact ? "py-4 sm:py-6" : "py-5 sm:py-8 lg:py-10"}`}
         >
-          {badge && <div className="badge-pill mb-2 sm:mb-3">{badge}</div>}
+          {badge && (
+            <div
+              className={`mb-2 sm:mb-3 ${compact ? "calc-page-badge" : "badge-pill"}`}
+            >
+              {badge}
+            </div>
+          )}
           <h1
-            className={`max-w-3xl font-extrabold text-teal-950 ${compact ? "text-xl sm:text-2xl" : ""}`}
+            className={`max-w-3xl ${
+              compact
+                ? "font-serif text-2xl font-bold text-[#1a4338] sm:text-3xl lg:text-4xl"
+                : "font-extrabold text-teal-950"
+            }`}
           >
             {title}
           </h1>

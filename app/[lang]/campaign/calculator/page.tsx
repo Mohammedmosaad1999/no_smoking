@@ -15,7 +15,8 @@ export default async function CalculatorPage({ params }: CalculatorPageProps) {
   return (
     <PageShell
       locale={lang}
-      badge={lang === "en" ? "Campaign" : "الحملة"}
+      compact
+      badge={ct(campaignContent.calculator.badge, lang)}
       title={ct(campaignContent.calculator.title, lang)}
       subtitle={ct(campaignContent.calculator.subtitle, lang)}
     >
