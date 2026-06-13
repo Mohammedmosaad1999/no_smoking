@@ -8,7 +8,6 @@ import {
   Activity,
   BookOpen,
   Calculator,
-  Globe,
   Home,
   Menu,
   ShoppingBag,
@@ -22,7 +21,6 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { campaignContent } from "@/lib/campaign-content";
 import { getNavLinks, ht } from "@/lib/home-content";
 import type { Locale } from "@/lib/i18n";
-import { content, t } from "@/lib/content";
 import { isNavLinkActive, isSignupActive } from "@/lib/nav-utils";
 
 type NavItem = {
@@ -128,16 +126,8 @@ export function MobileNav({ locale }: MobileNavProps) {
                 </Link>
               </nav>
 
-              <div className="sidebar-footer space-y-3">
+              <div className="sidebar-footer">
                 <LanguageToggle locale={locale} />
-                <Link
-                  href="/"
-                  onClick={() => setOpen(false)}
-                  className="sidebar-link border border-[#d8e8e0] bg-white"
-                >
-                  <Globe className="h-5 w-5 shrink-0 text-[#5bb89a]" />
-                  <span>{t(content.nav.changeLanguage, locale)}</span>
-                </Link>
               </div>
             </aside>
           </div>,

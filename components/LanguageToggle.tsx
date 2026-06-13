@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { Locale } from "@/lib/i18n";
+import { getLocalizedPath } from "@/lib/nav-utils";
 
 type LanguageToggleProps = {
   locale: Locale;
@@ -7,6 +11,8 @@ type LanguageToggleProps = {
 };
 
 export function LanguageToggle({ locale, compact = false }: LanguageToggleProps) {
+  const pathname = usePathname();
+
   return (
     <div
       className={`flex items-center justify-center rounded-full bg-[#1a4338] font-bold sm:w-auto ${
@@ -14,7 +20,7 @@ export function LanguageToggle({ locale, compact = false }: LanguageToggleProps)
       }`}
     >
       <Link
-        href="/en"
+        href={getLocalizedPath(pathname, "en")}
         className={`rounded-full transition ${
           compact ? "px-2 py-1" : "px-3 py-1.5"
         } ${
@@ -26,7 +32,7 @@ export function LanguageToggle({ locale, compact = false }: LanguageToggleProps)
         EN
       </Link>
       <Link
-        href="/ar"
+        href={getLocalizedPath(pathname, "ar")}
         className={`rounded-full transition ${
           compact ? "px-2 py-1" : "px-3 py-1.5"
         } ${

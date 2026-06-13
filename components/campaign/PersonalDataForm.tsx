@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   Calendar,
-  Cigarette,
+
   Mail,
   MessageSquare,
   User,
@@ -84,14 +84,14 @@ export function PersonalDataForm({ locale }: PersonalDataFormProps) {
         <div className="absolute -bottom-8 -start-8 h-32 w-32 rounded-full bg-emerald-400/10" />
 
         <div className="relative">
-          <div className="mb-5 flex items-center gap-2">
+          {/* <div className="mb-5 flex items-center gap-2">
             <span className="step-dot step-dot-active" />
             <span className="step-dot" />
             <span className="step-dot" />
           </div>
           <p className="text-sm font-bold uppercase tracking-wider text-teal-200">
             {locale === "en" ? "Step 1 of 3" : "الخطوة 1 من 3"}
-          </p>
+          </p> */}
           <h2 className="mt-2 text-xl font-extrabold sm:text-2xl lg:text-3xl">
             {ct(campaignContent.signup.title, locale)}
           </h2>
@@ -208,7 +208,7 @@ export function PersonalDataForm({ locale }: PersonalDataFormProps) {
 
             <label className="block">
               <span className="input-label flex items-center gap-2">
-                <Cigarette className="h-5 w-5 text-teal-600" />
+                {/* <Cigarette className="h-5 w-5 text-teal-600" /> */}
                 {ct(campaignContent.signup.cigarettesPerDay, locale)}
               </span>
               <input
